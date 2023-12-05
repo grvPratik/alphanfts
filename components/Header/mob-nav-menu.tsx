@@ -22,7 +22,7 @@ export default function MobNavMenu({ isOpen, setIsOpen }: MobNavMenuProps) {
 			<Transition appear show={isOpen} as={Fragment}>
 				<Dialog
 					as="div"
-					className="relative z-10 md:hidden"
+					className="relative z-50 md:hidden "
 					onClose={closeModal}
 				>
 					<Transition.Child

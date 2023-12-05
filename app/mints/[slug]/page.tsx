@@ -70,7 +70,7 @@ const MintDetailsPage = async ({
 					</div>
 					<div className="my-2 flex md:mx-6   flex-col">
 					
-						<p className="opacity-75 text-sm ">{discription} </p>
+						<p className="opacity-75 text-sm ">{discription}</p>
 					</div>
 					<div className=" flex flex-col md:flex-row">
 						<div className=" md:mx-8">

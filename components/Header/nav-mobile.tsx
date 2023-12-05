@@ -20,7 +20,7 @@ const NavMobile = () => {
 		setMobSearchToggle(true);
 	};
 	return (
-		<div className="sticky top-0 z-50 overflow-x-hidden w-full md:hidden">
+		<div className="sticky top-0 z-50 overflow-x-hidden w-full md:hidden bg-header backdrop-blur-md">
 			<div className=" mx-4 sm:mx-6 md:mx-8 lg:mx-10 ">
 				<div className="flex  items-center my-4">
 					<div onClick={handleMenuOpen} className="">
