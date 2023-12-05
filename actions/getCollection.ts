@@ -22,7 +22,7 @@ const getCollection = async (query:any) => {
   });
 
   try {
-    console.log(url);
+    
     const res = await axios.get(url, {
       headers: {
         'Cache-Control': 'no-store',

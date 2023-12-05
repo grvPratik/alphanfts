@@ -6,7 +6,7 @@ const ColletionInfo = async (query: any) => {
 		 return null
 	 }
 	const slug = slugify(query);
-	console.log(slug)
+	
 	const URL = `${process.env.NEXT_PUBLIC_API_URL}/collections/${slug}`;
 
 	try {

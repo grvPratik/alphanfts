@@ -9,7 +9,7 @@ interface TabSwitchProps{
 }
 const TabSwitch = ({setTabCategory,arr}:TabSwitchProps) => {
 	const [selectedIndex, setSelectedIndex] = useState(0);
-	console.log(selectedIndex);
+	
 	
 	
 	return (

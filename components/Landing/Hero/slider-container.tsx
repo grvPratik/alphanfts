@@ -23,7 +23,7 @@ interface SliderContainerProps{
 }
 const SliderContainer = ({ data }: SliderContainerProps) => {
 	const sliderData = data?.result;
-	console.log("data", data);
+	
 	return (
 		<div>
 			<Swiper
@@ -37,8 +37,7 @@ const SliderContainer = ({ data }: SliderContainerProps) => {
 					// pauseOnMouseEnter: true,
 				}}
 				pagination={{ clickable: true }}
-				onSlideChange={(swiper) => console.log(swiper)}
-				// onSwiper={(swiper) => console.log(swiper)}
+				
 			>
 				{sliderData.map((item: any, index: number) => (
 					<SwiperSlide key={item._id}>

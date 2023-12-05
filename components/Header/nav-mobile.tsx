@@ -20,7 +20,8 @@ const NavMobile = () => {
 		setMobSearchToggle(true);
 	};
 	return (
-		<div className="sticky top-0 z-50 overflow-x-hidden w-full md:hidden bg-header backdrop-blur-md">
+		<>
+		<div className="sticky top-0 z-50  w-full md:hidden bg-header backdrop-blur-md">
 			<div className=" mx-4 sm:mx-6 md:mx-8 lg:mx-10 ">
 				<div className="flex  items-center my-4">
 					<div onClick={handleMenuOpen} className="">
@@ -57,27 +58,27 @@ const NavMobile = () => {
 					</div>
 					<Link
 						href="/rewards"
-						className=" text-base font-medium  bg-violet-600 text-background transition-colors  p-2 px-5  rounded-2xl"
+						className=" text-base font-medium  bg-violet-600 text-white transition-colors  p-2 px-5  rounded-2xl"
 					>
 						rewards
 					</Link>
 				</div>
 			</div>
 			{mobSearchToggle && (
-				<div className="fixed w-full left-0 top-0 md:hidden bg-header backdrop-blur-lg p-3   flex">
+				<div className="fixed w-full left-0 top-0  md:hidden bg-background backdrop-blur-lg p-3 flex">
 					<div className="flex-1">
 						<SearchData />
 					</div>
 					<div
 						onClick={handleSearchClose}
-						className="flex items-center  bg-input mx-3 rounded justify-center"
+						className="flex items-center h-10 w-10  bg-input mx-3 rounded justify-center"
 					>
 						<XMarkIcon className="w-9 h-9 p-1 mx-2" />
 					</div>
 				</div>
 			)}
 			<MobNavMenu isOpen={mobMenuToggle} setIsOpen={setMobMenuToggle} />
-		</div>
+		</div></>
 	);
 };
 

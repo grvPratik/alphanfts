@@ -36,16 +36,16 @@ const SearchData = () => {
 	});
 	const handleClick = () => {
 		setSearchMenu(true);
-		console.log("handleclick ")
+		
 	};
 	const handleClose = () => {
 		setSearchMenu(false);
-		console.log("handleclose ");
+		
 	};
-	console.log(searchResult);
+	console.log(searchResult)
 	useOnClickOutside(searchDataRef, handleClose);
 	return (
-		<div ref={searchDataRef} className="relative max-w-[27rem]">
+		<div ref={searchDataRef} className="relative z-50 max-w-[27rem]">
 			<div onClick={handleClick}>
 				<SearchInput setSearch={setSearchValue} />{" "}
 			</div>

@@ -10,7 +10,7 @@ const MintDetailsPage = async ({
 }: {
 	params: { slug: string };
 }) => {
-	console.log(slug);
+	
 	if (!slug) {
 		return <div> not found</div>;
 	}

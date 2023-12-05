@@ -7,7 +7,7 @@ import { CollectionProps } from "@/types/site.type";
 export const dynamic = "force-dynamic";
 
 const DailyMintCard = ({ data }: {data:CollectionProps}) => {
-	// console.log(data);
+	
 const {
 	slug,
 	name,
