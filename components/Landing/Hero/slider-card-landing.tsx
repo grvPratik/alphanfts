@@ -29,7 +29,7 @@ const LandingSliderCard = ({ data }: { data: CollectionProps }) => {
 	} = data;
 	return (
 		<div className="w-full mt-8 mb-16 sm:mb-0">
-			<div className=" mx-6 sm:mx-8 md:mx-10 lg:mx-16 ">
+			<div className=" ">
 				<div className="flex gap-8 md:flex-row  flex-col-reverse md:py-10">
 					<div className="w-full my-auto">
 						<div className="flex flex-col gap-4 ">
