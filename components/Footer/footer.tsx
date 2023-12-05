@@ -1,12 +1,13 @@
 import Link from "next/link";
 import React from "react";
+import ToggleTheme from "../ui/Toggletheme";
 
 const Footer = () => {
 	return (
-		<footer>
+		
 			<footer className="bg-background">
 				<div className="relative mx-4 sm:mx-6 md:mx-8 lg:mx-10 px-4 pt-16 pb-6 lg:pt-24">
-					
+					<ToggleTheme/>
 
 					<div className="lg:flex lg:items-end lg:justify-between">
 						<div>
@@ -68,7 +69,7 @@ const Footer = () => {
 					</p>
 				</div>
 			</footer>
-		</footer>
+		
 	);
 };
 

@@ -21,11 +21,13 @@ const MintTabSeperateContainer = ({ trending, early }: any) => {
 	return (
 		<div className="flex flex-col gap-8">
 			<div className="w-full flex flex-col gap-4 ">
-				<div className=" flex justify-between">
+				<div className=" flex justify-between items-center">
 					{/* Render TabSwitch and TabSwitchIcons components */}
 					<div className="flex flex-col">
-						<h2 className="text-3xl font-bold tracking-tight">Popular</h2>
-						<p className="text-sm text-muted-foreground">
+						<h2 className="md:text-3xl text-lg font-bold tracking-tight">
+							Popular
+						</h2>
+						<p className=" text-xs md:text-sm text-muted-foreground">
 							Popular Mint across the blockchain
 						</p>
 					</div>
@@ -67,10 +69,12 @@ const MintTabSeperateContainer = ({ trending, early }: any) => {
 				</Link>
 			</div>{" "}
 			<div className="w-full flex flex-col gap-4 ">
-				<div className=" flex justify-between">
+				<div className=" flex justify-between items-center">
 					<div className="flex flex-col">
-						<h2 className="text-3xl font-bold tracking-tight">Latest</h2>
-						<p className="text-sm text-muted-foreground">
+						<h2 className="md:text-3xl text-lg font-bold tracking-tight">
+							Latest
+						</h2>
+						<p className=" text-xs md:text-sm text-muted-foreground">
 							Latest Projects across the blockchain
 						</p>
 					</div>

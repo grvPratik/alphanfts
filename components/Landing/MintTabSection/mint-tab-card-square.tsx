@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import SliderAvatar from "../../../extra/Hero2/slider-avatar";
 import { formatBlockchian, formatDate, supplyCheck } from "@/libs/utils";
 import { CollectionProps } from "@/types/site.type";
 import Link from "next/link";
+import SliderAvatar from "@/components/ui/slider-avatar";
 
 const CollectionCard = ({ data }: { data: CollectionProps }) => {
 	const {
@@ -26,7 +26,7 @@ const CollectionCard = ({ data }: { data: CollectionProps }) => {
 	} = data;
 	return (
 		<Link href={`/mints/${slug}`}>
-			<div className="relative w-full bn5 hover:-translate-y-3 transition-all duration-150">
+			<div className="relative w-full bn5  ">
 				<div className="relative w-full aspect-[14/11] rounded-lg overflow-hidden max-w-[28rem] text-white cursor-pointer mx-auto bg-cover ">
 					<Image
 						src={bannerUrl}

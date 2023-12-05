@@ -1,25 +1,32 @@
 "use client";
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment, useEffect, useRef, useState } from "react";
-import { ArrowSmallDownIcon, ArrowSmallUpIcon, BarsArrowUpIcon } from "@heroicons/react/20/solid";
+import {
+	ArrowSmallDownIcon,
+	ArrowSmallUpIcon,
+	BarsArrowUpIcon,
+} from "@heroicons/react/20/solid";
+import { FilterProps } from "@/types/site.type";
 
-interface SortProps{
+interface SortProps {
 	name: string;
-	type:"asc" |"desc"
+	type: "asc" | "desc";
+	params: string;
 }
-
-export default function MenuButton({filter,setFilter}) {
-
-const people = [
-	{ name: "Trending", type: "asc",params:"rating" },
-	{ name: "Trending", type: "desc",params:"rating" },
-	{ name: "Latest",type:"asc" ,params:"createdAt" },
-	{ name: "Latest" ,type:"desc" ,params:"createdAt"},
+interface MenuButtonProps{
+	filter: FilterProps;
+	setFilter: (value:FilterProps) => void;
+}
+export default function MenuButton({ filter, setFilter }: MenuButtonProps) {
 	
+	const mintType:SortProps[] = [
+		{ name: "Trending", type: "asc", params: "rating" },
+		{ name: "Trending", type: "desc", params: "rating" },
+		{ name: "Latest", type: "asc", params: "createdAt" },
+		{ name: "Latest", type: "desc", params: "createdAt" },
 	];
 
-
-	const handleClick = (value) => (event ) => {
+	const handleClick = (value:SortProps) => (event:React.MouseEvent<HTMLButtonElement>) => {
 		setFilter({
 			...filter,
 			sort: value.params,
@@ -27,8 +34,6 @@ const people = [
 			page: 1,
 		});
 	};
-
-
 
 	return (
 		<div className=" z-40  text-right">
@@ -51,7 +56,7 @@ const people = [
 					leaveTo="transform opacity-0 scale-95"
 				>
 					<Menu.Items className="absolute right-0 mt-2 w-[12rem] origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
-						{people.map((person, personIdx) => (
+						{mintType.map((person, personIdx) => (
 							<Menu.Item key={personIdx}>
 								{({ active }) => (
 									<button

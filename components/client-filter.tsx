@@ -3,7 +3,6 @@ import React, { useState } from "react";
 
 import MenuButton from "@/components/ui/menu";
 import ListBox from "@/components/ui/list-box";
-import DataTable from "@/extra/Table/data-table";
 import SearchState from "@/components/search-state";
 import { useQuery } from "@tanstack/react-query";
 import getCollection from "@/actions/getCollection";

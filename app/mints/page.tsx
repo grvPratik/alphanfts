@@ -18,7 +18,6 @@ const MintPage = () => {
 					success. Happy minting!
 				</div>
 			</div>
-
 			<ClientFilter />
 		</main>
 	);

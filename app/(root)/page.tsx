@@ -5,7 +5,7 @@ import getCollection from "@/actions/getCollection";
 import DailyMintContainer from "@/components/Landing/DailyMint/daily-mint-container";
 import { startOfDay, endOfDay } from "date-fns";
 import MintTabSeperateContainer from "@/components/Landing/MintTabSection/mint-tab-seperate";
-import ToggleTheme from "@/components/ui/Toggletheme";
+
 
 const RootPage = async () => {
 	// Get today's date boundaries
@@ -22,13 +22,13 @@ const RootPage = async () => {
 	});
 	const getTrending = await getCollection({
 		sort: "rating",
-		order: "asc",
+		order: "desc",
 		items: 8,
 	});
 
 	const getEarly = await getCollection({
 		sort: "createdAt",
-		order: "asc",
+		order: "desc",
 		items: 8,
 	});
 
@@ -38,7 +38,7 @@ const RootPage = async () => {
 			<SliderContainer data={getTrending} />
 			<DailyMintContainer dailyMintData={getTodayMint} />
 			<MintTabSeperateContainer trending={getTrending} early={getEarly} />
-			<ToggleTheme />
+			
 		</div>
 	);
 };
