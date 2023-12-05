@@ -12,8 +12,12 @@ const Nav = () => {
 				<div className=" mx-4 sm:mx-6 md:mx-8 lg:mx-10">
 					<div className="flex items-center py-4 justify-between">
 						<div className="gap-8 flex-1 relative grid grid-cols-5">
-							<span className=" font-bold col-span-1 text-lg flex items-center">ZENL</span>
-							<div className=" col-span-4"><SearchData/></div>
+							<span className=" font-bold col-span-1 text-lg flex items-center">
+								ZENL
+							</span>
+							<div className=" col-span-4">
+								<SearchData />
+							</div>
 						</div>
 						<div className="flex-1 items-center justify-end flex relative">
 							<MainNav />
@@ -22,7 +26,7 @@ const Nav = () => {
 						<div className=" flex justify-end">
 							<Link
 								href="/rewards"
-								className=" text-base font-medium bg-gray-50 text-black transition-colors  p-2 px-7  rounded-2xl"
+								className=" text-base font-medium dark:bg-indigo-600 text-black transition-colors bg-indigo-600 p-2 px-7  rounded-2xl"
 							>
 								rewards
 							</Link>

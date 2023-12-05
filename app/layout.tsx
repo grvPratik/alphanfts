@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/providers/theme-provider";
 import { siteConfig } from "@/config/site";
 import { Metadata } from "next";
 
-const inter = Roboto_Mono({ subsets: ["latin"] });
+const roboto = Roboto_Mono({ subsets: ["latin"] });
 
 export const metadata:Metadata = {
 	title: {
@@ -50,7 +50,7 @@ export default function RootLayout({
 			<body
 				className={cn(
 					"min-h-screen bg-background text-letter",
-					inter.className
+					roboto.className
 				)}
 			>
 				{" "}
