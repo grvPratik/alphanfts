@@ -61,23 +61,21 @@ const MintDetailsPage = async ({
 						<div className="relative flex-shrink-0   md:w-24 md:h-24 w-16 h-16 aspect-square rounded-2xl overflow-hidden">
 							<Image src={imageUrl} alt={name} fill className=" object-cover" />
 						</div>
-						<div className="md:mt-4 ">
+						<div className="mt-2 md:mt-4 ">
 							<div className=" md:text-3xl text-xl md:font-bold font-semibold leading-none">
 								{name}
 							</div>
 							<div className=" text-xs">@{slugId}</div>
 						</div>
 					</div>
-					<div className="my-2 flex md:mx-6  opacity-75 text-sm">
-						{discription} Lorem ipsum dolor sit amet, consectetur adipisicing
-						elit. Laboriosam velit maxime ea molestiae voluptates quis
-						provident, ex reiciendis dolorem, ab beatae quae iure eum incidunt
-						assumenda saepe magni enim fugit!
+					<div className="my-2 flex md:mx-6   flex-col">
+					
+						<p className="opacity-75 text-sm ">{discription} </p>
 					</div>
 					<div className=" flex flex-col md:flex-row">
-						<div className="mx-8">
+						<div className=" md:mx-8">
 							<div>
-								<div className="grid grid-cols-2 grid-rows-2  min-w-[21rem]  card rounded-xl w-full ">
+								<div className="grid grid-cols-2 grid-rows-2  min-w-[18rem]  card rounded-xl w-full ">
 									<div className=" flex-col flex   text-center  p-3 ">
 										<div>Mint Date:</div>
 										<div>{formatDate(mintDate)}</div>
@@ -97,7 +95,8 @@ const MintDetailsPage = async ({
 									</div>
 								</div>
 								<div className="w-full card my-4 rounded-lg p-4 text-center  text-lg">
-									Whitelish Status :<span className="green">OPEN</span>
+									Whitelish Status:
+									<span className="green">{whitelist ? "OPEN" : "CLOSE"}</span>
 								</div>
 							</div>
 						</div>

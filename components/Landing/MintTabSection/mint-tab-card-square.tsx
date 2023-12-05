@@ -48,7 +48,7 @@ const CollectionCard = ({ data }: { data: CollectionProps }) => {
 								<span className=" text-xs ">blockchain</span>
 							</div>
 							<div className=" flex items-center flex-col tracking-tighter justify-end">
-								<span className="  ">{formatDate(mintDate)}</span>
+								<span className=" text-center ">{formatDate(mintDate)}</span>
 								<span className=" text-xs ">Mint Date</span>
 							</div>
 							<div className=" flex items-center flex-col   justify-end">
