@@ -57,7 +57,7 @@ const NavMobile = () => {
 					</div>
 					<Link
 						href="/rewards"
-						className=" text-base font-medium bg-gray-50 text-black transition-colors  p-2 px-5  rounded-2xl"
+						className=" text-base font-medium  bg-violet-600 text-background transition-colors  p-2 px-5  rounded-2xl"
 					>
 						rewards
 					</Link>
