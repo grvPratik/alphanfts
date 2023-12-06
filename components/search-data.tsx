@@ -36,13 +36,11 @@ const SearchData = () => {
 	});
 	const handleClick = () => {
 		setSearchMenu(true);
-		
 	};
 	const handleClose = () => {
 		setSearchMenu(false);
-		
 	};
-	console.log(searchResult)
+	console.log(searchResult);
 	useOnClickOutside(searchDataRef, handleClose);
 	return (
 		<div ref={searchDataRef} className="relative z-50 max-w-[27rem]">
@@ -51,11 +49,7 @@ const SearchData = () => {
 			</div>
 			{searchMenu &&
 				(isLoading ? (
-<<<<<<< HEAD
 					<div className="absolute w-full top-full left-0 ">Loading..</div>
-=======
-					<div className="absolute w-full top-full left-0  ">Loading..</div>
->>>>>>> df081d6aec9c49fd7c7410ad363dd58566ce9b34
 				) : (
 					<div className="absolute w-full top-full left-0  ">
 						{searchResult && searchResult.length > 0 ? (
