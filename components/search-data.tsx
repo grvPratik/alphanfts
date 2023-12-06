@@ -51,7 +51,7 @@ const SearchData = () => {
 			</div>
 			{searchMenu &&
 				(isLoading ? (
-					<div>Loading..</div>
+					<div className="absolute w-full top-full left-0  ">Loading..</div>
 				) : (
 					<div className="absolute w-full top-full left-0  ">
 						{searchResult && searchResult.length > 0 ? (

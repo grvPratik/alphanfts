@@ -23,7 +23,7 @@ const SearchInput = ({ setSearch }: SearchInputProps) => {
 
 	return (
 		<div>
-			<div className="relative max-w-[27rem] w-full">
+			<div className="relative max-w-[27rem] w-full mx-auto">
 				<input
 					name="search"
 					placeholder="Search..."
