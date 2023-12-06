@@ -26,7 +26,8 @@ const Nav = () => {
 						<div className=" flex justify-end">
 							<Link
 								href="/rewards"
-								className=" text-base font-medium dark:bg-indigo-600 text-background transition-colors bg-indigo-600 p-2 px-7  rounded-2xl"
+								className=" cursor-not-allowed text-base font-medium dark:bg-indigo-600 text-background transition-colors bg-indigo-600 p-2 px-7  rounded-2xl"
+							    
 							>
 								rewards
 							</Link>

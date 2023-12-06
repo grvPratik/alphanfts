@@ -28,7 +28,7 @@ export function MainNav({
 				href="/rewards"
 				className="text-sm  text-letter font-medium text-muted-foreground transition-colors hover:text-blue-800"
 			>
-				rewards
+				about
 			</Link>
 		</nav>
 	);
