@@ -53,7 +53,7 @@ export default function MobNavMenu({ isOpen, setIsOpen }: MobNavMenuProps) {
 										as="h3"
 										className="flex text-letter items-center justify-between text-lg font-medium leading-6 text-gray-900"
 									>
-										<div>Zenl </div>
+										<div>AlphaNFTs </div>
 										<div>
 											<button
 												type="button"
@@ -66,9 +66,9 @@ export default function MobNavMenu({ isOpen, setIsOpen }: MobNavMenuProps) {
 									</Dialog.Title>
 									<div className="mt-2">
 										<div className=" text-gray-500 flex flex-col gap-2 mb-12">
-											<Link href={'/'}>Mints</Link>
-											<Link href={'/'}>Resources</Link>
-											<Link href={'/'}>About</Link>
+											<Link href={"/"}>Mints</Link>
+											<Link href={"/"}>Resources</Link>
+											<Link href={"/"}>About</Link>
 										</div>
 									</div>
 

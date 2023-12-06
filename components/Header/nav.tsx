@@ -13,7 +13,7 @@ const Nav = () => {
 					<div className="flex items-center py-4 justify-between">
 						<div className="gap-8 flex-1 relative grid grid-cols-5">
 							<span className=" font-bold col-span-1 text-lg flex items-center">
-								ZENL
+								AlphaNFTs
 							</span>
 							<div className=" col-span-4">
 								<SearchData />
