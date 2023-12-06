@@ -12,7 +12,7 @@ const MintDetailsPage = async ({
 }) => {
 	
 	if (!slug) {
-		return <div> not found</div>;
+		return <div className=" min-h-screen w-full flex items-center justify-center"> not found</div>;
 	}
 	const mintDetails = await ColletionInfo(slug);
 	if (mintDetails?.length === 0) {
