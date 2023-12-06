@@ -12,10 +12,10 @@ const MintDetailsPage = async ({
 }) => {
 	
 	if (!slug) {
-		return <div> not found</div>;
+		return ;
 	}
 	const mintDetails = await ColletionInfo(slug);
-	if (mintDetails?.length === 0) {
+	if (mintDetails?.result?.length === 0) {
 		return (
 			<div className=" w-[100vw] h-[100vh] flex justify-center items-center">
 				<h1>Not Found.....</h1>
