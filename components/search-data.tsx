@@ -51,7 +51,11 @@ const SearchData = () => {
 			</div>
 			{searchMenu &&
 				(isLoading ? (
+<<<<<<< HEAD
+					<div className="absolute w-full top-full left-0 ">Loading..</div>
+=======
 					<div className="absolute w-full top-full left-0  ">Loading..</div>
+>>>>>>> df081d6aec9c49fd7c7410ad363dd58566ce9b34
 				) : (
 					<div className="absolute w-full top-full left-0  ">
 						{searchResult && searchResult.length > 0 ? (
