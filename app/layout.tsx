@@ -9,10 +9,15 @@ import { Metadata } from "next";
 
 const roboto = Roboto_Mono({ subsets: ["latin"] });
 
-export const metadata:Metadata = {
+export const metadata: Metadata = {
 	title: {
 		default: siteConfig.name,
 		template: `%s | ${siteConfig.name}`,
+	},
+	icons: {
+		icon: "/icon-black.png",
+		apple: "/icon-black.png",
+		shortcut: "/icon-black.png",
 	},
 	description: siteConfig.description,
 	keywords: [
@@ -20,9 +25,11 @@ export const metadata:Metadata = {
 		"trending nfts",
 		"Popular NFTs",
 		"nft mints",
+		"alphanfts",
+		"nft alpha group",
 		"best crypto nft",
 	],
-	
+
 	creator: "pratikgrv",
 	openGraph: {
 		type: "website",
@@ -32,7 +39,6 @@ export const metadata:Metadata = {
 		description: siteConfig.description,
 		siteName: siteConfig.name,
 	},
-	
 };
 
 
