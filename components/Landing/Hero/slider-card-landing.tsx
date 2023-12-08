@@ -79,7 +79,7 @@ const LandingSliderCard = ({ data }: { data: CollectionProps }) => {
 												xmlSpace="preserve"
 												fill="#000000"
 											>
-												<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+												<g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
 												<g
 													id="SVGRepo_tracerCarrier"
 													strokeLinecap="round"
@@ -93,7 +93,6 @@ const LandingSliderCard = ({ data }: { data: CollectionProps }) => {
 													></path>{" "}
 													<path
 														style={{ fill: "#FFAA00" }}
-														
 														d="M492.867,181.448l-149.825-21.785L276.014,23.866c-4.215-8.541-12.524-12.695-20.718-12.441v416.463 l0.698-0.366l134.025,70.451c16.374,8.607,35.51-5.296,32.386-23.528l-25.578-149.241l108.409-105.685 C518.482,206.605,511.172,184.11,492.867,181.448z"
 													></path>{" "}
 												</g>
@@ -132,13 +131,14 @@ const LandingSliderCard = ({ data }: { data: CollectionProps }) => {
 									<span>Mint date</span>
 								</span>
 							</div>
-							<div className="">
+							<div className="mt-6 ">
 								<Link
-									href="#"
-									className="mt-4 inline-block rounded-full border text-white border-indigo-600 px-12 py-3 text-sm font-medium text-letter bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500"
+									href={`/mints/${slug}`}
+									className=" button-20 px-12 py-3"
 								>
 									View Details
 								</Link>
+								{/* inline-block rounded-full border text-white border-indigo-600 px-12 py-3 text-sm font-medium text-letter bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500 */}
 							</div>
 						</div>
 					</div>

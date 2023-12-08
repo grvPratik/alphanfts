@@ -40,7 +40,7 @@ const SearchData = () => {
 	const handleClose = () => {
 		setSearchMenu(false);
 	};
-	console.log(searchResult);
+	
 	useOnClickOutside(searchDataRef, handleClose);
 	return (
 		<div ref={searchDataRef} className="relative z-50 max-w-[27rem]">
@@ -57,7 +57,7 @@ const SearchData = () => {
 								{searchResult.map((result: CollectionProps, index) => (
 									<div className="w-full " key={index}>
 										<Link href={`/mints${result.slug}`}>
-											<div className="flex items-center gap-3 p-1.5 rounded hover:bg-violet-950 cursor-pointer ">
+											<div className="flex items-center gap-3 p-1.5 rounded hover:bg-violet-950/10 cursor-pointer ">
 												<div>
 													<Image
 														className="  object-cover bg-cover rounded overflow-hidden"

@@ -27,7 +27,7 @@ const SliderContainer = ({ data }: SliderContainerProps) => {
 	return (
 		<div>
 			<Swiper
-				spaceBetween={2}
+				spaceBetween={16}
 				modules={[Navigation, Pagination, Autoplay]}
 				slidesPerView={1}
 				loop

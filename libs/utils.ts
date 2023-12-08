@@ -47,3 +47,15 @@ export function supplyCheck(supply: number) {
 	} else 
 		return supply
 }
+export function chainShortName(blockchain: string) {
+	if (blockchain === "Solana") {
+		return "SOL"
+	}
+	if (blockchain === "Ethereum") {
+		return "ETH";
+	}
+	if (blockchain === "Bitcoin") {
+		return "BTC";
+	}
+	return blockchain;
+}

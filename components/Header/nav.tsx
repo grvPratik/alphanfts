@@ -59,10 +59,10 @@ m254 -52 c28 -14 85 -76 142 -154 18 -25 40 -46 50 -48 23 -5 54 50 63 112 9
 
 						<div className=" flex justify-end">
 							<Link
-								href="/rewards"
-								className=" cursor-not-allowed text-base font-medium dark:bg-indigo-600 text-background transition-colors bg-indigo-600 p-2 px-7  rounded-2xl"
+								href={"/"}
+								className="button-20 cursor-not-allowed px-4 py-2"
 							>
-								rewards
+								Rewards
 							</Link>
 						</div>
 					</div>

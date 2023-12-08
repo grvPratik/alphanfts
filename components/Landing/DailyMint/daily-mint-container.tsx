@@ -2,39 +2,19 @@ import React from "react";
 import DailyMintCard from "./daily-mint-card";
 import { CollectionProps } from "@/types/site.type";
 import { cn } from "@/libs/utils";
-const data = {
-	_id: "654dedb15246c45522fb32fe",
-	slug: "bratsonsol",
-	name: "Brats OG FREE MINT",
-	description: "Bringing back the fun of degen mints on Solana",
-	blockchain: "Solana",
-	imageUrl:
-		"https://res.cloudinary.com/dukcc4zkg/image/upload/v1699605712/gd9gdgs8aptdqe0u7csg.png",
-	bannerUrl:
-		"https://res.cloudinary.com/dukcc4zkg/image/upload/v1699605720/bc2of7iytzlc9r3x9xes.jpg",
-	supply: 1,
-	rating: 4,
-	whitelist: true,
-	featured: false,
-	verified: false,
-	requirement: "",
-	info: "",
-	roadmap: "",
-	mintPrice: 0,
-	mintDate: null,
-	startTime: "",
-	x: "https://twitter.com/Bratsonsol",
-	discord: "https://discord.com/invite/EHftagUhRY",
-	website: "",
-	__v: 0,
-	createdAt: "2023-11-10T08:45:37.876Z",
-	updatedAt: "2023-11-10T08:45:37.876Z",
-};
 
-interface DailyMintContainerProps {
-	dailyMintData?: CollectionProps[]; // Optional array of CollectionProps or undefined
+
+interface ApiDataprops {
+	dailyMintData?: {
+		success: boolean;
+		total: number;
+		result:CollectionProps[]
+
+	} // Optional array of CollectionProps or undefined
 }
-const DailyMintContainer: React.FC<DailyMintContainerProps> = ({ dailyMintData }) => {
+const DailyMintContainer: React.FC<ApiDataprops> = ({ dailyMintData }) => {
+	
+	const dailyMintResult= dailyMintData?.result
 	return (
 		<div className="flex flex-col">
 			<div>
@@ -45,13 +25,13 @@ const DailyMintContainer: React.FC<DailyMintContainerProps> = ({ dailyMintData }
 			</div>
 			<div
 				className={cn(
-					dailyMintData && dailyMintData.length > 0
+					dailyMintResult && dailyMintResult.length > 0
 						? " w-full gap-2  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  place-items-center"
 						: "w-full"
 				)}
 			>
-				{dailyMintData && dailyMintData.length > 0 ? (
-					dailyMintData?.map((data: CollectionProps, index: number) => (
+				{dailyMintResult && dailyMintResult.length > 0 ? (
+					dailyMintResult?.map((data: CollectionProps, index: number) => (
 						<DailyMintCard data={data} key={data._id} />
 					))
 				) : (

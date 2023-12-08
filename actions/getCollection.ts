@@ -14,6 +14,7 @@ const getCollection = async (query:any) => {
     startdate: query.startdate,
     enddate: query.enddate,
     items: query.items,
+    date:query.date
   };
 
   const url = qs.stringifyUrl({
@@ -22,7 +23,6 @@ const getCollection = async (query:any) => {
   });
 
   try {
-    
     const res = await axios.get(url, {
       headers: {
         'Cache-Control': 'no-store',
@@ -32,6 +32,7 @@ const getCollection = async (query:any) => {
     // Check if the response status is in the 2xx range (indicating success)
     if (res.status < 200 || res.status >= 300) {
       throw new Error(`HTTP error! Status: ${res.status}`);
+      
     }
 
     return res.data;
