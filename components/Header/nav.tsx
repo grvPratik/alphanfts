@@ -14,7 +14,7 @@ const Nav = () => {
 					<div className="flex items-center py-4 justify-between">
 						<div className="gap-8 flex-1 relative grid grid-cols-5">
 							<span className=" font-bold col-span-1 text-lg flex items-center">
-								<div className="flex items-center justify-center h-10 w-10 overflow-hidden p-1 bg-black  rounded-xl">
+								<div className="">
 									<Logo />
 								</div>
 							</span>

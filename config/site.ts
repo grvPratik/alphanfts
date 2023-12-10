@@ -1,10 +1,10 @@
 export const siteConfig = {
 	name: "Alphanfts",
-	description: "A platform for finding upcoming and trending NFTs in web3",
+	description:
+		"Alpha NFTs. Discover upcoming, popular, and daily minted NFTs all in one place! Explore the newest drops, trending collections, and fresh creations daily on our platform.",
 	url: "https://alphanfts.app",
-	ogImage: "",
+	ogImage: "/alphanftslogo.png",
 	links: {
-		twitter: "",
+		twitter: "https://twitter.com/thealphanfts",
 	},
-
 };

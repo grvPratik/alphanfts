@@ -40,7 +40,7 @@ const NavMobile = () => {
 								/>
 							</svg>
 						</div>
-						<div className="flex items-center justify-center h-10 w-10 overflow-hidden p-1 bg-black  rounded-xl">
+						<div className="">
 							<Logo />
 						</div>
 
