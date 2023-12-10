@@ -57,5 +57,5 @@ export function chainShortName(blockchain: string) {
 	if (blockchain === "Bitcoin") {
 		return "BTC";
 	}
-	return blockchain;
+	return "TBA";
 }
