@@ -26,8 +26,8 @@ const CollectionCard = ({ data }: { data: CollectionProps }) => {
 	} = data;
 	return (
 		<Link href={`/mints/${slug}`}>
-			<div className="relative w-full bn5  ">
-				<div className="relative w-full aspect-[14/11] rounded-lg overflow-hidden max-w-[28rem] text-white cursor-pointer mx-auto bg-cover ">
+			<div className="relative w-full bn5">
+				<div className="relative w-full aspect-[14/11]  rounded-lg overflow-hidden max-w-[28rem] text-white cursor-pointer mx-auto bg-cover ">
 					<Image
 						src={bannerUrl}
 						alt={name}

@@ -51,9 +51,9 @@ const SearchData = () => {
 				(isLoading ? (
 					<div className="absolute w-full top-full left-0 ">Loading..</div>
 				) : (
-					<div className="absolute w-full top-full left-0  ">
+					<div className="absolute w-full top-full left-0 ">
 						{searchResult && searchResult.length > 0 ? (
-							<div className=" relative mt-3 flex flex-col gap-1 border-violet-950  bg-background shadow-md max-h-80  overflow-y-auto z-50 p-3 rounded overflow-hidden">
+							<div className=" relative mt-3 flex flex-col gap-1 hidescroll border-violet-950  bg-background shadow-md max-h-80  overflow-y-auto z-50 p-3 rounded overflow-hidden">
 								{searchResult.map((result: CollectionProps, index) => (
 									<div className="w-full " key={index}>
 										<Link href={`/mints${result.slug}`}>

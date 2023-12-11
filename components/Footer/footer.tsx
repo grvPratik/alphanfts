@@ -7,7 +7,7 @@ const Footer = () => {
 	return (
 		<footer className="bg-background">
 			<div className="relative mx-4 sm:mx-6 md:mx-8 lg:mx-10 px-4 pt-16 pb-2 lg:pt-24">
-				<ToggleTheme />
+				
 
 				<div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
 					<div className="sm:col-span-2">
@@ -32,8 +32,11 @@ const Footer = () => {
 							</p>
 						</div>
 					</div>
-					{/* <div className="space-y-2 text-sm">
-						<p className="text-base font-bold tracking-wide text-gray-900">
+					 <div className="space-y-2 text-sm"><ToggleTheme />
+					
+						
+						
+						{/*	<p className="text-base font-bold tracking-wide text-gray-900">
 							Contacts
 						</p>
 						<div className="flex">
@@ -70,15 +73,19 @@ const Footer = () => {
 							>
 								312 Lovely Street, NY
 							</a>
-						</div>
-					</div> */}
+						</div>*/}
+
+
+
+					</div> 
 					<div>
 						<span className="text-base font-bold tracking-wide text-gray-900">
 							Social
 						</span>
 						<div className="flex items-center mt-1 space-x-3">
 							<a
-								href="/"
+								href="https://twitter.com/thealphanfts"
+								target="_blank"
 								className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400  rounded-full p-1 hover:bg-gray-300"
 							>
 								<svg
@@ -108,6 +115,7 @@ const Footer = () => {
 							</a>
 							<a
 								href="/"
+								target="_blank"
 								className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400  rounded-full p-1 hover:bg-gray-300"
 							>
 								<svg
@@ -150,8 +158,7 @@ const Footer = () => {
 							</a>
 						</div>
 						<p className="mt-4 text-sm text-gray-500">
-							Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken
-							spare ribs salami.
+							Follow our social to get updated on latest events. 💖🫱🏾‍🫲🏽
 						</p>
 					</div>
 				</div>

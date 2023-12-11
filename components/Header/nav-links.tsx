@@ -25,7 +25,7 @@ export function MainNav({
 				Resources
 			</Link>
 			<Link
-				href="/rewards"
+				href="/about"
 				className="text-sm  text-letter font-medium text-muted-foreground transition-colors hover:text-blue-800"
 			>
 				about

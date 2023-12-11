@@ -4,7 +4,7 @@ import Container from "@/components/container";
 const AboutPage = () => {
 	return (
 		<Container>
-			<div className="my-12 flex flex-col">
+			<div className="my-12 flex flex-col ">
 				<div className="flex w-full items-center justify-center flex-col gap-2">
 					<svg
 						version="1.0"
@@ -35,15 +35,16 @@ c31 -32 79 -47 119 -37 44 11 74 54 116 171 l42 115 -37 117 c-20 65 -43 131
 -51 146 -27 52 -96 79 -148 57z"
 							/>
 						</g>
-					</svg><h1 className="text-2xl font-bold">Alpha Nfts</h1>
-				</div>
-				
+					</svg>
+					<h1 className="text-2xl font-bold">Alpha Nfts</h1>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
 					perferendis molestias velit blanditiis recusandae eos. Consequatur
 					vero, hic dolores dolore vel tempora? Molestias vel dolor voluptatibus
 					amet iure rerum provident.
-				</p>
+				</p></div>
+
+				
 			</div>
 		</Container>
 	);

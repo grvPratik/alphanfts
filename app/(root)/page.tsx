@@ -30,7 +30,7 @@ const RootPage = async () => {
 
 	return (
 		<div className="flex flex-col gap-6  mx-4 sm:mx-6 md:mx-8 lg:mx-10 ">
-			<SliderContainer data={getTrending} />
+			<SliderContainer data={getEarly} />
 			<DailyMintContainer dailyMintData={getTodayMint} />
 			<MintTabSeperateContainer trending={getTrending} early={getEarly} />
 		</div>
