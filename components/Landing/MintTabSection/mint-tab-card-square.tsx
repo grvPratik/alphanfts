@@ -32,7 +32,6 @@ const CollectionCard = ({ data }: { data: CollectionProps }) => {
 						src={bannerUrl}
 						alt={name}
 						fill
-						priority
 						className="absolute object-cover  bg-cover"
 					/>
 					<div className="pointer-events-none  absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent "></div>

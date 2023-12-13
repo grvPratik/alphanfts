@@ -2,13 +2,11 @@ import Image from "next/image";
 import React from "react";
 
 const CircleAvatar = ({ url }: { url: string }) => {
-	
 	return (
 		<div className="relative aspect-square w-[5rem] md:w-[6rem] rounded-full ">
 			<Image
 				className="absolute rounded-full object-cover overflow-hidden"
 				src={url}
-				priority
 				fill
 				alt=""
 			/>

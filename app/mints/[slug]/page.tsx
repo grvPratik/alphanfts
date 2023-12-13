@@ -5,6 +5,36 @@ import ColletionInfo from "@/actions/getCollectionInfo";
 import { formatDate, supplyCheck } from "@/libs/utils";
 import MintInfoSection from "@/components/mint-info-section";
 
+export async function generateMetadata({
+	params: { slug },
+}: {
+	params: { slug: string };
+}) {
+	try {
+		const mint = await ColletionInfo(slug);
+		if (!mint)
+			return {
+				title: "Not Found",
+				description: "The page you are looking for does not exist.",
+			};
+
+		return {
+			title: mint.name,
+			description: mint.description,
+			alternates: {
+				canonical: `/mint/${mint.slug}`,
+			},
+		};
+	} catch (error) {
+		console.error(error);
+		return {
+			title: "Not Found",
+			description: "The page you are looking for does not exist.",
+		};
+	}
+}
+
+
 const MintDetailsPage = async ({
 	params: { slug },
 }: {

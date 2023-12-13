@@ -206,7 +206,7 @@
   width: 1px;
   height: 3px;
   border-radius: 7px;
-  background: rgb(255, 255, 255);
+  background: rgba(1, 163, 254, 255);
   transition: 0.5s;
   animation: loading1274 2s ease infinite;
 }

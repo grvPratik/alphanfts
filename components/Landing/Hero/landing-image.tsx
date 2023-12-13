@@ -15,13 +15,7 @@ const LandingImage = ({ url, className }: LandingImgPros) => {
 				className
 			)}
 		>
-			<Image
-				src={url}
-				className="object-cover object-center"
-				fill
-				priority
-				alt=""
-			/>
+			<Image src={url} className="object-cover object-center" fill alt="" />
 		</div>
 	);
 };
