@@ -1,3 +1,4 @@
+
 export interface CollectionProps {
     _id?: string;
 	slug?: string;

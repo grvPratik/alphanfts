@@ -37,7 +37,7 @@ export default function MenuButton({ filter, setFilter }: MenuButtonProps) {
 
 	return (
 		<div className=" z-40  text-right">
-			<Menu as="div" className="relative inline-block text-left">
+			<Menu as="div" className="relative shadow-lg inline-block text-left">
 				<div>
 					<Menu.Button className="inline-flex w-full justify-center rounded-md  px-1.5 py-1.5 text-sm font-medium bg-white/10 hover:bg-black/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75">
 						<BarsArrowUpIcon

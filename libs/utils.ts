@@ -42,8 +42,6 @@ export function titleLengthFormat(title: string) {
 export function supplyCheck(supply: number) {
 	if (supply === 0) {
 		return "TBA";
-	} else if (supply === 1) {
-		return "FREE";
 	} else 
 		return supply
 }

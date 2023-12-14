@@ -17,7 +17,7 @@ const TabSwitchIcons = ({
 	const [selectedIndex, setSelectedIndex] = useState<number>(0);
 
 	return (
-		<div className=" px-2 py-4 sm:px-0">
+		<div className=" px-2 py-4 shadow-lg sm:px-0">
 			<Tab.Group
 				selectedIndex={selectedIndex}
 				onChange={(index) => {

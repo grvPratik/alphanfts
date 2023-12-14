@@ -11,7 +11,7 @@ const ToggleTheme = () => {
 
 	return (
 		<div className="flex">
-			<div className="flex my-4 gap-1 rounded-full cursor-pointer p-1 overflow-hidden bg-gray-50/5 w-auto">
+			<div className="flex shadow-lg my-4 gap-1 rounded-full cursor-pointer p-1 overflow-hidden bg-gray-50/5 w-auto">
 				<div className="p-2 rounded-full" onClick={() => setTheme("dark")}>
 					<svg
 						height="16"

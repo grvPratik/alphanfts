@@ -13,7 +13,7 @@ const TabSwitch = ({setTabCategory,arr}:TabSwitchProps) => {
 	
 	
 	return (
-		<div className="max-w-[28rem] px-2  sm:px-0">
+		<div className="max-w-[28rem] px-2 shadow-lg  sm:px-0">
 			<Tab.Group
 				selectedIndex={selectedIndex}
 				onChange={(index) => {

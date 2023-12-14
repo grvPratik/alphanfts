@@ -22,7 +22,7 @@ export default function ListBox({ filter, setFilter }:SetFilterProps) {
 		});
 	};
 	return (
-		<div className=" min-w-[14rem]  w-full z-10">
+		<div className=" min-w-[14rem]  w-full z-10 shadow-lg">
 			<Listbox value={selected} onChange={handleChange}>
 				<div className="relative">
 					<Listbox.Button className="relative w-full cursor-default rounded-lg bg-white/10 hover:bg-white/5 py-2 pl-3 pr-10 text-left text-sm  focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
