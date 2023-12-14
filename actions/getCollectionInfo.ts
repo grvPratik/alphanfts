@@ -24,8 +24,9 @@ const ColletionInfo = async (query: any) => {
 		}
 
 		return res.data;
-	} catch (error) {
-		console.error("Axios error:", error);
+	} catch (error:any) {
+		 console.log(error.toJSON());
+		
 		throw error;
 	}
 };

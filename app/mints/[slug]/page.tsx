@@ -2,8 +2,16 @@ import Image from "next/image";
 import React from "react";
 
 import ColletionInfo from "@/actions/getCollectionInfo";
-import { formatDate, supplyCheck } from "@/libs/utils";
+import { cn, formatDate, supplyCheck } from "@/libs/utils";
 import MintInfoSection from "@/components/mint-info-section";
+import Container from "@/components/container";
+import TextGradient from "@/components/text-gradient";
+
+const renderNotFound = () => (
+	<div className=" min-h-screen flex justify-center items-center">
+		<h1>Not Found.....</h1>
+	</div>
+);
 
 export async function generateMetadata({
 	params: { slug },
@@ -34,23 +42,18 @@ export async function generateMetadata({
 	}
 }
 
-
 const MintDetailsPage = async ({
 	params: { slug },
 }: {
 	params: { slug: string };
 }) => {
-	
 	if (!slug) {
-		return ;
+		return;
 	}
 	const mintDetails = await ColletionInfo(slug);
-	if (mintDetails?.result?.length === 0) {
-		return (
-			<div className=" w-[100vw] h-[100vh] flex justify-center items-center">
-				<h1>Not Found.....</h1>
-			</div>
-		);
+
+	if (mintDetails.success) {
+		return renderNotFound();
 	}
 	const {
 		name,
@@ -82,7 +85,7 @@ const MintDetailsPage = async ({
 	};
 	return (
 		<div>
-			<div className=" mx-4 sm:mx-6 md:mx-8 lg:mx-10 ">
+			<Container>
 				<div className="flex flex-col">
 					<div className="relative w-full aspect-[9/2] rounded-xl overflow-hidden">
 						<Image src={bannerUrl} alt={name} fill className=" object-cover" />
@@ -99,34 +102,42 @@ const MintDetailsPage = async ({
 						</div>
 					</div>
 					<div className="my-2 flex md:mx-6   flex-col">
-					
 						<p className="opacity-75 text-sm ">{discription}</p>
 					</div>
 					<div className=" flex flex-col md:flex-row">
 						<div className=" md:mx-8">
 							<div>
-								<div className="grid grid-cols-2 grid-rows-2  min-w-[18rem]  card rounded-xl w-full ">
+								<div className="grid grid-cols-2 grid-rows-2  min-w-[18rem] bg-gray-200/70 dark:bg-gray-200/20 rounded-xl w-full ">
 									<div className=" flex-col flex   text-center  p-3 ">
-										<div>Mint Date:</div>
+										<div className=" font-semibold">Mint Date:</div>
 										<div>{formatDate(mintDate)}</div>
 									</div>
 									<div className=" flex-col flex   text-center  p-3">
-										<div>Supply:</div>
+										<div className=" font-semibold">Supply:</div>
 										<div>{supplyCheck(supply)}</div>
 									</div>
 
 									<div className=" flex-col  flex  text-center  p-3">
-										<div>Network:</div>
-										<div>{blockchain}</div>
+										<div className=" font-semibold">Network:</div>
+										<div>
+											<TextGradient text={blockchain} />
+										</div>
 									</div>
 									<div className=" flex-col flex  text-center  p-3">
-										<div>Mint Price:</div>
+										<div className=" font-semibold">Mint Price:</div>
 										<div>{mintPrice}</div>
 									</div>
 								</div>
-								<div className="w-full card my-4 rounded-lg p-4 text-center  text-lg">
+								<div className="w-full my-4 rounded-lg text-gray-500 p-4 text-center text-md">
 									Whitelish Status:
-									<span className="green">{whitelist ? "OPEN" : "CLOSE"}</span>
+									<span
+										className={cn(
+											"",
+											whitelist ? "text-green-500" : "text-red-500"
+										)}
+									>
+										{whitelist ? "OPEN" : "CLOSE"}
+									</span>
 								</div>
 							</div>
 						</div>
@@ -135,7 +146,7 @@ const MintDetailsPage = async ({
 						</div>
 					</div>
 				</div>
-			</div>
+			</Container>
 		</div>
 	);
 };

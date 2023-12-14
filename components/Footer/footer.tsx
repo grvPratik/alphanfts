@@ -2,11 +2,13 @@
 import React from "react";
 import ToggleTheme from "../ui/Toggletheme";
 import Logo from "@/components/Icon/logo"
+import Container from "@/components/container";
+
 
 const Footer = () => {
 	return (
-		<footer className="bg-background">
-			<div className="relative mx-4 sm:mx-6 md:mx-8 lg:mx-10 px-4 pt-16 pb-2 lg:pt-24">
+		<footer className="bg-background px-4 pt-16 pb-2 lg:pt-24">
+			<Container>
 				
 
 				<div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -32,7 +34,8 @@ const Footer = () => {
 							</p>
 						</div>
 					</div>
-					 <div className="space-y-2 text-sm"><ToggleTheme />
+					<div className="space-y-2 text-sm">
+						<ToggleTheme />
 					
 						
 						
@@ -193,7 +196,7 @@ const Footer = () => {
 						</li>
 					</ul>
 				</div>
-			</div>
+			</Container>
 		</footer>
 	);
 };

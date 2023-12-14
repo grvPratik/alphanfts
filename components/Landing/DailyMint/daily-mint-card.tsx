@@ -29,8 +29,8 @@ const {
 } = data;
 	return (
 		
-			<div className="relative my-4 flex w-full  flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md">
-				<div className="relative mx-3 mt-3 flex h-60  overflow-hidden rounded-xl">
+			<div className="relative my-4 flex w-full  flex-col overflow-hidden rounded-lg  bg-gray-300/20  shadow-md">
+				<div className="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl">
 					<Image className="object-cover" src={imageUrl} alt={name} fill />
 					{/* <span className="absolute top-0 left-0 m-2 rounded-full bg-black px-2 text-center text-sm font-medium text-white">
 						39% OFF
@@ -99,7 +99,7 @@ const {
 						</div>
 					</div>
 					<Link
-						href="#"
+						href={`/mints/${slug}`}
 						className="flex items-center justify-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
 					>
 						<svg

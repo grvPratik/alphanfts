@@ -1,4 +1,4 @@
-import { Roboto_Mono, Inter } from "next/font/google";
+import { Roboto_Mono,DM_Sans, } from "next/font/google";
 
 import "@/styles/globals.css";
 import { cn } from "@/libs/utils";
@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/providers/theme-provider";
 import { siteConfig } from "@/config/site";
 import { Metadata } from "next";
 
-const roboto = Roboto_Mono({ subsets: ["latin"] });
+const roboto = DM_Sans({weight: ["400","500",'600','700','800','900', ], subsets:["latin"]});
 
 export const metadata: Metadata = {
 	title: {
