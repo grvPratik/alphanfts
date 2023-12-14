@@ -51,9 +51,10 @@ const MintDetailsPage = async ({
 		return;
 	}
 	const mintDetails = await ColletionInfo(slug);
+//   console.log(mintDetails)
+	if (mintDetails.success ===false) {
 
-	if (!mintDetails.success) {
-		return renderNotFound();
+		return renderNotFound()
 	}
 	const {
 		name,
