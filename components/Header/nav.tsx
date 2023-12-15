@@ -9,9 +9,9 @@ import Logo from "../Icon/logo";
 const Nav = () => {
 	return (
 		<header className="sticky top-0 z-50  w-full hidden md:block bg-header backdrop-blur-xl ">
-			<div className="">
+			
 				<div className=" mx-4 sm:mx-6 md:mx-8 lg:mx-10">
-					<div className="flex items-center py-4 justify-between">
+					<div className="flex items-center py-3 justify-between">
 						<div className="gap-8 flex-1 relative grid grid-cols-5">
 							<span className=" font-bold col-span-1 text-lg flex items-center">
 								<div className="">
@@ -36,7 +36,7 @@ const Nav = () => {
 						</div>
 					</div>
 				</div>
-			</div>
+			
 		</header>
 	);
 };

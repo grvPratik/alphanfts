@@ -29,9 +29,11 @@ const CollectionCard = ({ data }: { data: CollectionProps }) => {
 			<div className="relative w-full bn5">
 				<div className="relative w-full aspect-[14/11]  rounded-lg overflow-hidden max-w-[28rem] text-white cursor-pointer mx-auto bg-cover ">
 					<Image
+						sizes="100%"
+						fill
 						src={bannerUrl}
 						alt={name}
-						fill
+						
 						className="absolute object-cover  bg-cover"
 					/>
 					<div className="pointer-events-none  absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent "></div>

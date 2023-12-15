@@ -23,7 +23,7 @@ const NavMobile = () => {
 		<>
 			<div className="sticky top-0 z-50  w-full md:hidden bg-header backdrop-blur-md">
 				<div className=" mx-4 sm:mx-6 md:mx-8 lg:mx-10 ">
-					<div className="flex  items-center my-4">
+					<div className="flex  items-center py-2">
 						<div onClick={handleMenuOpen} className="">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"

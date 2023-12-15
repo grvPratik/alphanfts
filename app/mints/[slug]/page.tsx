@@ -89,11 +89,23 @@ const MintDetailsPage = async ({
 			<Container>
 				<div className="flex flex-col">
 					<div className="relative w-full aspect-[9/2] rounded-xl overflow-hidden">
-						<Image src={bannerUrl} alt={name} fill className=" object-cover" />
+						<Image
+							src={bannerUrl}
+							alt={name}
+							sizes="100%"
+							fill
+							className=" object-cover"
+						/>
 					</div>
 					<div className="my-2 md:mt-4 flex md:mx-6 gap-4 ">
 						<div className="relative flex-shrink-0   md:w-24 md:h-24 w-16 h-16 aspect-square rounded-2xl overflow-hidden">
-							<Image src={imageUrl} alt={name} fill className=" object-cover" />
+							<Image
+								src={imageUrl}
+								alt={name}
+								sizes="100%"
+								fill
+								className=" object-cover"
+							/>
 						</div>
 						<div className="mt-2 md:mt-4 ">
 							<div className=" md:text-3xl text-xl md:font-bold font-semibold leading-none">

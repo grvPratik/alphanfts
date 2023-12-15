@@ -35,6 +35,7 @@ const MintTabCard = ({ data, index }:{data:CollectionProps,index:number}) => {
 							className="object-cover rounded-xl bg-cover "
 							src={imageUrl}
 							alt={name}
+							sizes="100%"
 							fill
 						/>
 					</div>

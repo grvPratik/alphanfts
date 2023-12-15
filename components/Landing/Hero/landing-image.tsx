@@ -5,9 +5,10 @@ import React from "react";
 interface LandingImgPros {
 	url: string;
 	className: string;
+	alt: string
 }
 
-const LandingImage = ({ url, className }: LandingImgPros) => {
+const LandingImage = ({ url, className,alt }: LandingImgPros) => {
 	return (
 		<div
 			className={cn(
@@ -15,7 +16,13 @@ const LandingImage = ({ url, className }: LandingImgPros) => {
 				className
 			)}
 		>
-			<Image src={url} className="object-cover object-center" fill alt="" />
+			<Image
+				src={url}
+				style={{ objectFit: "cover" }}
+				sizes="100%"
+				fill
+				alt={alt}
+			/>
 		</div>
 	);
 };

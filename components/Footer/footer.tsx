@@ -25,7 +25,7 @@ const Footer = () => {
 						</span>
 						<div className="mt-6 lg:max-w-sm">
 							<p className="text-sm dark:text-violet-200/75 opacity-70">
-								Discover upcoming, popular, and daily minted NFTs all in one
+								Discover upcoming, trending, and daily minted NFTs all in one
 								place! Explore the newest drops, trending collections, and fresh
 								creations daily on our platform.
 							</p>

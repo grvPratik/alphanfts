@@ -56,7 +56,7 @@ const SearchState = ({ filter, setFilter }:SearchStateProps) => {
 				<input
 					type="text"
 					id="table-search-users"
-					className="block p-2 ps-10 text-sm text-gray-900  rounded-lg w-full bg-gray-50/10  dark:bg-background/10  outline-none  border-none dark:placeholder-gray-400 dark:text-white "
+					className="block p-2 ps-10 text-sm text-gray-900 shadow-sm border border-solid border-borderColor rounded-lg w-full bg-gray-50/10  dark:bg-background/10  outline-none   dark:placeholder-gray-400 dark:text-white "
 					placeholder="Search for users"
 					value={searchInput}
 					onChange={handleChange}

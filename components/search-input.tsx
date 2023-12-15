@@ -23,13 +23,13 @@ const SearchInput = ({ setSearch }: SearchInputProps) => {
 
 	return (
 		<div>
-			<div className="relative max-w-[27rem] w-full mx-auto">
+			<div className="relative max-w-[29rem] w-full mx-auto">
 				<input
 					name="search"
 					placeholder="Search..."
 					value={searchInput}
 					onChange={handleChange}
-					className=" h-10 px-5 pl-10 w-full antialiased  bg-input rounded focus:outline-none text-sm  "
+					className=" h-10 px-5 pl-10 w-full antialiased shadow-sm  bg-input rounded-lg focus:outline-none text-sm  "
 				/>
 				<div className="absolute left-0 top-0 mt-3 ml-4">
 					<svg

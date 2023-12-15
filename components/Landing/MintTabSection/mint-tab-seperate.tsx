@@ -25,10 +25,10 @@ const MintTabSeperateContainer = ({ trending, early }: any) => {
 					{/* Render TabSwitch and TabSwitchIcons components */}
 					<div className="flex flex-col">
 						<h2 className="md:text-3xl text-lg font-bold tracking-tight">
-							Popular
+							Trending
 						</h2>
 						<p className=" text-xs md:text-sm text-muted-foreground">
-							Popular Mint across the blockchain
+							Trending Mint across the blockchain
 						</p>
 					</div>
 					<TabSwitchIcons setTabLayout={setTabLayoutTrend} />

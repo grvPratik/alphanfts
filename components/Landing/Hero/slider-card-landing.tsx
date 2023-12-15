@@ -146,6 +146,7 @@ const LandingSliderCard = ({ data }: { data: CollectionProps }) => {
 						<LandingImage
 							className="ml-auto flex items-center"
 							url={bannerUrl}
+							alt={name}
 						/>
 					</div>
 				</div>

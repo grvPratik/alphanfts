@@ -17,6 +17,7 @@ const SliderAvatar = ({ size, alt, src }: AvatarProps) => {
 				<Image
 					className="absolute object-center object-cover"
 					src={src}
+					sizes="100%"
 					fill
 					alt={alt}
 				/>

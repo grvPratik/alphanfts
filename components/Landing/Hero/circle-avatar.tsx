@@ -7,6 +7,7 @@ const CircleAvatar = ({ url }: { url: string }) => {
 			<Image
 				className="absolute rounded-full object-cover overflow-hidden"
 				src={url}
+				sizes="100%"
 				fill
 				alt=""
 			/>
