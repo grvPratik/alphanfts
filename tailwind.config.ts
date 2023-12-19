@@ -17,6 +17,7 @@ const config: Config = {
 				borderColor: "var(--border-color)",
 			},
 		},
+		
 	},
 	plugins: [],
 };

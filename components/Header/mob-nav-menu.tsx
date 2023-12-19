@@ -37,42 +37,47 @@ export default function MobNavMenu({ isOpen, setIsOpen }: MobNavMenuProps) {
 						<div className="fixed inset-0 bg-black/25" />
 					</Transition.Child>
 
-					<div className="fixed inset-0 overflow-y-auto">
-						<div className="flex min-h-full items-center justify-center p-4 text-center">
+					<div className="fixed inset-0 ">
+						<div className="flex h-full items-end justify-center text-center">
 							<Transition.Child
 								as={Fragment}
-								enter="ease-out duration-300"
-								enterFrom="opacity-0 scale-95"
-								enterTo="opacity-100 scale-100"
-								leave="ease-in duration-200"
-								leaveFrom="opacity-100 scale-100"
-								leaveTo="opacity-0 scale-95"
+								enter="ease-in-out duration-300"
+								enterFrom="opacity-0 translate-y-full"
+								enterTo="opacity-100 translate-y-0"
+								leave="ease-in-out duration-200"
+								leaveFrom="opacity-100 translate-y-0"
+								leaveTo="opacity-0 translate-y-full"
 							>
-								<Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-background p-6 text-left align-middle shadow-xl transition-all">
+								<Dialog.Panel className="w-full max-w-md  overflow-hidden rounded-t-2xl bg-background p-6 text-left  shadow-xl transition-all">
 									<Dialog.Title
 										as="h3"
 										className="flex text-letter items-center justify-between text-lg font-medium leading-6 text-gray-900"
 									>
 										<div>AlphaNFTs </div>
-										<div>
-											<button
-												type="button"
-												className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-2 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-												onClick={closeModal}
-											>
-												<XMarkIcon className="h-4 w-4" />
-											</button>
-										</div>
 									</Dialog.Title>
 									<div className="mt-2">
 										<div className=" text-gray-500 flex flex-col gap-2 mb-12">
-											<Link href={"/"}>Mints</Link>
-											<Link href={"/"}>Resources</Link>
-											<Link href={"/"}>About</Link>
+											<Link className="py-2 rounded-lg" href={"/"}>
+												Mints
+											</Link>
+											<Link className="py-2 rounded-lg" href={"/"}>
+												Resources
+											</Link>
+											<Link className="py-2 rounded-lg" href={"/"}>
+												About
+											</Link>
 										</div>
 									</div>
 
-									<div className="mt-4"></div>
+									<div className="mt-2">
+										<button
+											type="button"
+											className="inline-flex justify-center rounded-full border border-transparent font-medium w-full bg-black text-white p-2 "
+											onClick={closeModal}
+										>
+											close
+										</button>
+									</div>
 								</Dialog.Panel>
 							</Transition.Child>
 						</div>

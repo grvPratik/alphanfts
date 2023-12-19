@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { Fragment, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,6 +8,7 @@ import { useQuery } from "@tanstack/react-query";
 import getCollection from "@/actions/getCollection";
 import { CollectionProps } from "@/types/site.type";
 import useOnClickOutside from "@/hooks/useOnClickOutside";
+import { Transition } from "@headlessui/react";
 
 const SearchData = () => {
 	const [searchResult, setSearchResult] = useState([]);
@@ -34,13 +35,15 @@ const SearchData = () => {
 			return { filteredData, filteredCount };
 		},
 	});
+	console.log(data)
+	
 	const handleClick = () => {
 		setSearchMenu(true);
 	};
 	const handleClose = () => {
 		setSearchMenu(false);
 	};
-	
+
 	useOnClickOutside(searchDataRef, handleClose);
 	return (
 		<div ref={searchDataRef} className="relative z-50 max-w-[27rem]">
@@ -49,11 +52,24 @@ const SearchData = () => {
 			</div>
 			{searchMenu &&
 				(isLoading ? (
-					<div className="absolute w-full top-full left-0 ">Loading..</div>
+					<div className="absolute w-full top-full left-0 h-20 flex items-center justify-center">
+						<div aria-label="Loading..." role="status">
+							<svg
+								className="animate-spin w-6 h-6 fill-slate-800"
+								viewBox="3 3 18 18"
+							>
+								<path
+									className="opacity-20"
+									d="M12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5ZM3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z"
+								></path>
+								<path d="M16.9497 7.05015C14.2161 4.31648 9.78392 4.31648 7.05025 7.05015C6.65973 7.44067 6.02656 7.44067 5.63604 7.05015C5.24551 6.65962 5.24551 6.02646 5.63604 5.63593C9.15076 2.12121 14.8492 2.12121 18.364 5.63593C18.7545 6.02646 18.7545 6.65962 18.364 7.05015C17.9734 7.44067 17.3403 7.44067 16.9497 7.05015Z"></path>
+							</svg>
+						</div>
+					</div>
 				) : (
-					<div className="absolute w-full top-full left-0 ">
-						{searchResult && searchResult.length > 0 ? (
-							<div className=" relative mt-3 flex flex-col gap-1 hidescroll border-violet-950  bg-background shadow-md max-h-80  overflow-y-auto z-50 p-3 rounded overflow-hidden">
+					<div className="absolute w-full top-full left-0  mt-3 border border-solid  rounded-xl overflow-hidden">
+						{searchResult && searchResult.length > 0 && searchValue ? (
+							<div className=" relative flex flex-col gap-1 hidescroll bg-background  max-h-80  overflow-y-auto z-50 p-3 rounded overflow-hidden">
 								{searchResult.map((result: CollectionProps, index) => (
 									<div className="w-full " key={index}>
 										<Link href={`/mints${result.slug}`}>
@@ -76,7 +92,7 @@ const SearchData = () => {
 								))}
 							</div>
 						) : (
-							<div>Not Found</div>
+							searchResult.length>0 && <div>not found</div>
 						)}
 					</div>
 				))}
@@ -85,3 +101,8 @@ const SearchData = () => {
 };
 
 export default SearchData;
+
+
+function SearchTableItem() {
+	
+}
