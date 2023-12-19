@@ -18,9 +18,6 @@
     --header-color: rgb(16, 2, 38, 0.6);
     --border-color: rgba(134, 134, 134, 0.5);
   }
-  html {
-    -webkit-tap-highlight-color: transparent;
-  }
 }
 
 /* hide scrollbar */
@@ -35,6 +32,14 @@
   scrollbar-width: none;
   /* Firefox */
 }
+
+.mintTabCard {
+  display: grid;
+  grid-template-columns: 1fr 3fr 12fr;
+  width: 100%;
+  /* max-width: 25rem; */
+}
+
 
 
 
