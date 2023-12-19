@@ -18,6 +18,9 @@
     --header-color: rgb(16, 2, 38, 0.6);
     --border-color: rgba(134, 134, 134, 0.5);
   }
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
 /* hide scrollbar */
@@ -32,6 +35,13 @@
   scrollbar-width: none;
   /* Firefox */
 }
+
+
+
+
+
+
+
 
 .bn5 {
   border: none;
