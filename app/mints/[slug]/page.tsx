@@ -30,7 +30,7 @@ export async function generateMetadata({
 			title: mint.name,
 			description: mint.description,
 			alternates: {
-				canonical: `/mint/${mint.slug}`,
+				canonical: `/mints/${mint.slug}`,
 			},
 		};
 	} catch (error) {
