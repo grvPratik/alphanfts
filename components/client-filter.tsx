@@ -60,7 +60,7 @@ const ClientFilter = () => {
 	const btn = (
 		<button
 			onClick={load}
-			className="disabled:opacity-50 transition inline-flex items-center justify-center space-x-1.5 border focus:outline-none focus:ring-2 focus:ring-offset-2 focus:z-10 shrink-0 saturate-[110%] border-gray-700/75 focus:ring-gray-600 bg-gray-600 text-white hover:bg-gray-700 hover:border-gray-700 px-3 py-2 text-sm font-medium rounded-md"
+			className="disabled:opacity-50 rounded-full transition inline-flex items-center justify-center space-x-1.5 border focus:outline-none focus:ring-2 focus:ring-offset-2 focus:z-10 shrink-0 saturate-[110%] border-gray-700/75 focus:ring-gray-600 bg-gray-600 text-white hover:bg-gray-700 hover:border-gray-700 px-4 py-2 text-sm font-medium "
 			disabled={isLoading}
 		>
 			{isLoading && (

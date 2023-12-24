@@ -13,33 +13,33 @@ interface SortProps {
 	type: "asc" | "desc";
 	params: string;
 }
-interface MenuButtonProps{
+interface MenuButtonProps {
 	filter: FilterProps;
-	setFilter: (value:FilterProps) => void;
+	setFilter: (value: FilterProps) => void;
 }
 export default function MenuButton({ filter, setFilter }: MenuButtonProps) {
-	
-	const mintType:SortProps[] = [
+	const mintType: SortProps[] = [
 		{ name: "Trending", type: "asc", params: "rating" },
 		{ name: "Trending", type: "desc", params: "rating" },
 		{ name: "Latest", type: "asc", params: "createdAt" },
 		{ name: "Latest", type: "desc", params: "createdAt" },
 	];
 
-	const handleClick = (value:SortProps) => (event:React.MouseEvent<HTMLButtonElement>) => {
-		setFilter({
-			...filter,
-			sort: value.params,
-			order: value.type,
-			page: 1,
-		});
-	};
+	const handleClick =
+		(value: SortProps) => (event: React.MouseEvent<HTMLButtonElement>) => {
+			setFilter({
+				...filter,
+				sort: value.params,
+				order: value.type,
+				page: 1,
+			});
+		};
 
 	return (
 		<div className=" z-40  text-right">
 			<Menu as="div" className="relative inline-block text-left">
 				<div>
-					<Menu.Button className="inline-flex shadow-sm border border-solid border-borderColor w-full justify-center rounded-md  px-1.5 py-1.5 text-sm font-medium bg-white/10 hover:bg-black/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75">
+					<Menu.Button className="inline-flex shadow-sm border border-solid  border-border  border-borderColor w-full justify-center rounded-md  px-1.5 py-1.5 text-sm font-medium bg-white/10 hover:bg-black/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75">
 						<BarsArrowUpIcon
 							className=" h-6 w-6 text-current hover:text-violet-100"
 							aria-hidden="true"

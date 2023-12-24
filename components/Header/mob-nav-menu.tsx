@@ -57,15 +57,18 @@ export default function MobNavMenu({ isOpen, setIsOpen }: MobNavMenuProps) {
 									</Dialog.Title>
 									<div className="mt-2">
 										<div className=" text-gray-500 flex flex-col gap-2 mb-12">
-											<Link className="py-2 rounded-lg" href={"/"}>
-												Mints
-											</Link>
-											<Link className="py-2 rounded-lg" href={"/"}>
-												Resources
-											</Link>
-											<Link className="py-2 rounded-lg" href={"/"}>
-												About
-											</Link>
+											
+											<div className="py-2 rounded-lg">
+												<Link  href="/mints">
+													Mints
+												</Link>
+											</div>
+											<div className="py-2 rounded-lg">
+												<Link href={"/"}>Resources</Link>
+											</div>
+											<div className="py-2 rounded-lg">
+												<Link href={"/"}>About</Link>
+											</div>
 										</div>
 									</div>
 

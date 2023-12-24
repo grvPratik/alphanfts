@@ -85,7 +85,7 @@ const MintDetailsPage = async ({
 		roadmap,
 	};
 	return (
-		<div>
+		
 			<Container>
 				<div className="flex flex-col">
 					<div className="relative w-full aspect-[9/2] rounded-xl overflow-hidden">
@@ -160,7 +160,7 @@ const MintDetailsPage = async ({
 					</div>
 				</div>
 			</Container>
-		</div>
+		
 	);
 };
 

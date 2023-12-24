@@ -6,7 +6,7 @@ import Footer from "@/components/Footer/footer";
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
 	return (
-		<main className="flex flex-col bg-background scroll-smooth">
+		<main className="flex flex-col bg-background scroll-smooth antialiased">
 			<Nav />
 			<NavMobile />
 			{children}

@@ -9,7 +9,7 @@ export function MainNav({
 	return (
 		<nav
 			className={cn(
-				"flex items-center gap-3 md:gap-4 lg:gap-8 mx-6 antialiased",
+				"flex items-center gap-3 md:gap-4 lg:gap-6 antialiased",
 				className
 			)}
 			{...props}
@@ -31,7 +31,7 @@ export function MainNav({
 				href="/about"
 				className="text-sm  text-letter  text-muted-foreground transition-colors hover:text-blue-800"
 			>
-				about
+				About
 			</Link>
 		</nav>
 	);

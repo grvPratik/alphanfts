@@ -29,7 +29,7 @@ const TabSwitchIcons = ({
 					<Tab
 						className={({ selected }) =>
 							cn(
-								" rounded-lg shadow-sm border border-solid p-2",
+								" rounded-lg shadow-sm border border-solid  border-border  p-2",
 								"ring-white/60 ring-offset-2  focus:outline-none ",
 								selected
 									? "bg-white  shadow"

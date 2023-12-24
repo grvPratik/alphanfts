@@ -63,7 +63,7 @@ const MintTabSeperateContainer = ({ trending, early }: any) => {
 				)}
 				<Link
 					href="/mints"
-					className=" text-base max-w-sm mx-auto font-medium bg-gray-50 border border-gray-300 text-black transition-colors hover:bg-gray-200 duration-200   p-2 px-7 text-center  rounded-2xl"
+					className=" text-base max-w-sm mx-auto font-medium bg-gray-50 dark:text-white dark:bg-white/25 border-gray-300 text-black transition-colors hover:bg-gray-200 duration-200   p-2 px-7 text-center  rounded-2xl"
 				>
 					view all
 				</Link>

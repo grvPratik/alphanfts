@@ -5,7 +5,7 @@ import React from "react";
 const Logo = () => {
 	return (
 		<Link href={'/'}>
-		<div className="flex items-center justify-center h-10 w-10 overflow-hidden p-1 bg-black  rounded-lg">
+		<div className="flex items-center justify-center h-9 w-9 overflow-hidden p-1 bg-black  rounded-lg">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 1080 1080"

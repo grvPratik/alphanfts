@@ -3,17 +3,15 @@ import React, { useState } from "react";
 
 import { Tab } from "@headlessui/react";
 import { cn } from "@/libs/utils";
-interface TabSwitchProps{
-	setTabCategory: (value:number) => void;
+interface TabSwitchProps {
+	setTabCategory: (value: number) => void;
 	arr: string[];
 }
-const TabSwitch = ({setTabCategory,arr}:TabSwitchProps) => {
+const TabSwitch = ({ setTabCategory, arr }: TabSwitchProps) => {
 	const [selectedIndex, setSelectedIndex] = useState(0);
-	
-	
-	
+
 	return (
-		<div className="max-w-[28rem] px-2 shadow-lg  sm:px-0">
+		<div className="max-w-[28rem] px-2   sm:px-0">
 			<Tab.Group
 				selectedIndex={selectedIndex}
 				onChange={(index) => {
@@ -21,18 +19,17 @@ const TabSwitch = ({setTabCategory,arr}:TabSwitchProps) => {
 					setTabCategory(index);
 				}}
 			>
-				<Tab.List className="flex space-x-1 rounded-2xl bg-violet-50/10 backdrop-blur  p-1">
+				<Tab.List className="flex space-x-1 border border-solid  border-border  rounded-2xl bg-violet-50/10 backdrop-blur  p-1">
 					{arr.map((tabitems, index) => (
 						<Tab
-							
 							key={index}
 							className={({ selected }) =>
 								cn(
-									"w-full rounded-xl py-2 text-sm font-medium leading-5",
+									"w-full rounded-xl py-2 text-sm leading-5",
 									"ring-white/60 ring-offset-2  focus:outline-none ",
 									selected
-										? "bg-white text-blue-700 shadow"
-										: "text-blue-100 hover:bg-white/[0.12] hover:text-white"
+										? "bg-white text-blue-700 shadow border border-solid  border-border "
+										: "text-blue-400 hover:bg-white/[0.12] hover:text-black"
 								)
 							}
 						>

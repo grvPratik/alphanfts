@@ -5,19 +5,18 @@ import { CheckIcon, ChevronDownIcon } from "@heroicons/react/20/solid";
 import { FilterProps } from "@/types/site.type";
 
 const network = ["Solana", "Etherum", "Bitcoin"];
-interface SetFilterProps{
-	filter:FilterProps;
-	setFilter: (filter:FilterProps) => void;
+interface SetFilterProps {
+	filter: FilterProps;
+	setFilter: (filter: FilterProps) => void;
 }
-export default function ListBox({ filter, setFilter }:SetFilterProps) {
+export default function ListBox({ filter, setFilter }: SetFilterProps) {
 	const [selected, setSelected] = useState("blockchain");
-	
 
 	const handleChange = (value: string) => {
 		setSelected(value);
 		setFilter({
 			...filter,
-			blockchain:value,
+			blockchain: value,
 			page: 1,
 		});
 	};
@@ -25,7 +24,7 @@ export default function ListBox({ filter, setFilter }:SetFilterProps) {
 		<div className=" min-w-[14rem]  w-full z-10 ">
 			<Listbox value={selected} onChange={handleChange}>
 				<div className="relative">
-					<Listbox.Button className="relative w-full cursor-default shadow-sm border border-solid border-borderColor rounded-lg bg-white/10 hover:bg-white/5 py-2 pl-3 pr-10 text-left text-sm  focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
+					<Listbox.Button className="relative w-full cursor-default shadow-sm border border-solid  border-border  border-borderColor rounded-lg bg-white/10 hover:bg-white/5 py-2 pl-3 pr-10 text-left text-sm  focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
 						<span className="block truncate">{selected}</span>
 						<span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
 							<ChevronDownIcon

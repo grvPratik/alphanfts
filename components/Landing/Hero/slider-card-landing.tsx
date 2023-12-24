@@ -134,7 +134,7 @@ const LandingSliderCard = ({ data }: { data: CollectionProps }) => {
 							<div className="mt-6 ">
 								<Link
 									href={`/mints/${slug}`}
-									className=" button-20 px-12 py-3"
+									className=" inline-block rounded-full border text-white border-indigo-600 px-12 py-3 text-sm font-medium text-letter bg-[#5769fd] hover:text-white focus:outline-none focus:ring active:bg-blue-500 "
 								>
 									View Details
 								</Link>

@@ -14,7 +14,8 @@ const Nav = () => {
 					<div className="gap-8 flex-1 relative flex  items-center">
 						<span className=" font-bold  text-lg flex items-center">
 							<div className="flex items-center gap-2">
-								<Logo /><span className="hidden md:block text-lg">Alphanfts</span>
+								<Logo />
+								<span className="hidden md:block text-lg">Alphanfts</span>
 							</div>
 						</span>
 						<div className="  items-center">
@@ -28,7 +29,7 @@ const Nav = () => {
 					<div className=" flex justify-end">
 						<Link
 							href={"/"}
-							className=" bg-black text-white dark:bg-white dark:text-black rounded-lg cursor-not-allowed px-4 py-2"
+							className=" inline-block rounded-full text-white text-sm font-medium text-letter bg-gradient-to-r from-blue-800 via-purple-500 to-pink-400 hover:text-white focus:outline-none focus:ring active:bg-indigo-500 px-4 py-2"
 						>
 							Rewards
 						</Link>

@@ -5,13 +5,12 @@ import React, { useState, useEffect } from "react";
 import useDebounce from "@/hooks/useDebounce";
 import { FilterProps } from "@/types/site.type";
 
-interface SearchStateProps{
+interface SearchStateProps {
 	filter: FilterProps;
-	setFilter : React.Dispatch<React.SetStateAction<FilterProps>>;
+	setFilter: React.Dispatch<React.SetStateAction<FilterProps>>;
 }
 
-
-const SearchState = ({ filter, setFilter }:SearchStateProps) => {
+const SearchState = ({ filter, setFilter }: SearchStateProps) => {
 	const [searchInput, setSearchInput] = useState("");
 	const debouncedSearch = useDebounce(searchInput, 500);
 
@@ -23,7 +22,7 @@ const SearchState = ({ filter, setFilter }:SearchStateProps) => {
 				page: 1,
 			});
 		}
-	// eslint-disable-next-line react-hooks/exhaustive-deps
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [debouncedSearch]);
 
 	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -38,7 +37,7 @@ const SearchState = ({ filter, setFilter }:SearchStateProps) => {
 			<div className="relative w-full ">
 				<div className="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center ps-3 pointer-events-none">
 					<svg
-						className="w-4 h-4 text-gray-500 dark:text-gray-400"
+						className="w-4 h-4 bg-transparent text-gray-500 dark:text-gray-400"
 						aria-hidden="true"
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
@@ -56,7 +55,7 @@ const SearchState = ({ filter, setFilter }:SearchStateProps) => {
 				<input
 					type="text"
 					id="table-search-users"
-					className="block p-2 ps-10 text-sm text-gray-900 shadow-sm border border-solid border-borderColor rounded-lg w-full bg-gray-50/10  dark:bg-background/10  outline-none   dark:placeholder-gray-400 dark:text-white "
+					className="block p-2 ps-10 text-sm text-gray-900 shadow-sm border border-solid  border-border   rounded-lg w-full bg-gray-50/10  dark:bg-background/10  outline-none   dark:placeholder-gray-400 dark:text-white "
 					placeholder="Search for users"
 					value={searchInput}
 					onChange={handleChange}

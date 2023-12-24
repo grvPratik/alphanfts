@@ -57,13 +57,13 @@ const GridTableRow = ({ rowData, indexNum }: GridRowProps) => {
 	return (
 		<Link href={`/mints/${slug}`}>
 			<div
-				className="grid grid-cols-7 gap-3 py-4   transition ease-in-out 
-				hover:translate-y-1 hover:scale-99 hover:bg-gray-200/40 dark:hover:bg-violet-600/5 rounded
-				duration-100"
+				className="grid md:px-4 grid-cols-7 gap-3 py-4  duration-75 
+				  hover:bg-gray-200 transition ease-in-out dark:hover:bg-white/5 rounded-3xl
+				"
 			>
 				{/* */}
 				<div className=" my-auto col-span-2 flex items-center gap-3">
-					<div className="mx-2 my-auto">{indexNum + 1}.</div>
+					<div className=" w-8 text-center">{indexNum + 1}.</div>
 					<div className=" flex items-center">
 						<div className="relative inline-block  rounded-md w-10 h-10 overflow-hidden ">
 							<Image

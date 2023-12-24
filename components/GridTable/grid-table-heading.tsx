@@ -15,10 +15,10 @@ const GridTableHeading = ({
 	loading,
 }: DataTableProps) => {
 	return (
-		<div className="overflow-x-auto">
+		<div className="overflow-x-auto  hidescroll">
 			<div className="-z-40 flex flex-col min-w-[54rem] text-letter">
-				<div className="w-full border-solid ">
-					<div className="grid grid-cols-7 gap-3 py-3 font-light border-y border-blue-gray-100 border-borderColor">
+				<div className="w-full  ">
+					<div className="grid grid-cols-7 gap-3 py-3 font-light">
 						<div className=" col-span-2 antialiased text-sm text-blue-gray-900 flex items-center justify-between gap-2 font-normal leading-none opacity-70">
 							Collction name
 						</div>
@@ -42,7 +42,7 @@ const GridTableHeading = ({
 				{loading && filter.page === 1 ? (
 					<TableRowLoading />
 				) : filteredData && filteredData.length > 0 ? (
-					filteredData.map((row:CollectionProps, index: number) => (
+					filteredData.map((row: CollectionProps, index: number) => (
 						<GridTableRow rowData={row} key={row._id} indexNum={index} />
 					))
 				) : (

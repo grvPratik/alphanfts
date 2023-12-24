@@ -14,7 +14,7 @@ const config: Config = {
 				letter: "var(--text-color)",
 				input: "var(--input-color)",
 				header: "var(--header-color)",
-				borderColor: "var(--border-color)",
+				border: "var(--border-color)",
 			},
 		},
 		
