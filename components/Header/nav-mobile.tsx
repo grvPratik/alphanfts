@@ -23,7 +23,7 @@ const NavMobile = () => {
 		<>
 			<div className="sticky top-0 z-50  w-full md:hidden bg-background backdrop-blur-md">
 				<div className=" mx-4 sm:mx-6 md:mx-8 lg:mx-10 ">
-					<div className="flex  items-center py-2">
+					<div className="flex  items-center py-2.5">
 						<div
 							onClick={handleMenuOpen}
 							className="p-1 rounded-full border border-solid  border-border "
@@ -54,7 +54,7 @@ const NavMobile = () => {
 					</div>
 				</div>
 				{mobSearchToggle && (
-					<div className="fixed w-full left-0 top-0 items-center  md:hidden bg-background backdrop-blur-lg flex px-2 py-1">
+					<div className="fixed w-full left-0 top-0 items-center  md:hidden bg-background backdrop-blur-lg flex px-2 py-1.5">
 						<div className="flex-1">
 							<SearchData />
 						</div>
