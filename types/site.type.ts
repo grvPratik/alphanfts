@@ -32,3 +32,8 @@ export interface FilterProps {
 	order: string;
 	page: number;
 }
+export interface OptimizedImageProps{
+	src: string;
+	alt: string;
+	className:string
+}

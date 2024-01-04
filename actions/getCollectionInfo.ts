@@ -7,7 +7,7 @@ const ColletionInfo = async (query: any) => {
 	 }
 	const slug = slugify(query);
 	
-	const URL = `${process.env.NEXT_PUBLIC_API_URL}/collections/${slug}`;
+	const URL = `${process.env.NEXT_PUBLIC_API_URL}/projects/${slug}`;
 
 	try {
 		const res = await axios.get(URL, {

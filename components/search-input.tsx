@@ -34,17 +34,19 @@ const SearchInput = ({ setSearch, onClick, modalState }: SearchInputProps) => {
 				placeholder="Search..."
 				value={searchInput}
 				onChange={handleChange}
-				className={cn("h-9 md:h-10 font-mono focus:outline-none  transition-all duration-200 ease-in-out translate-x-0  w-full antialiased dark:bg-gray-900",modalState ?"-translate-x-6":"")}
+				className={cn(
+					"h-9 md:h-10  focus:outline-none  transition-all duration-200 ease-in-out translate-x-0  w-full antialiased dark:bg-gray-900",
+					modalState ? "-translate-x-6" : ""
+				)}
 			/>
 			<div
 				className={cn(
-					"pl-3.5 pr-1.5  relative h-10 flex items-center justify-center transition-all  ease-in-out duration-150 ",
-					 
+					"pl-3.5 pr-1.5  relative h-10 flex items-center justify-center transition-all  ease-in-out duration-150 "
 				)}
 			>
 				<svg
 					className={cn(
-						"h-4 w-4 opacity-60  bg-transparent",
+						"h-4 w-4  bg-transparent",
 						modalState ? "opacity-0" : ""
 					)}
 					fill="currentColor"

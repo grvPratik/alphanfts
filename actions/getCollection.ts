@@ -3,7 +3,7 @@ import qs from 'query-string';
 
 
 const getCollection = async (query:any) => {
-  const URL = `${process.env.NEXT_PUBLIC_API_URL}/collections`;
+  const URL = `${process.env.NEXT_PUBLIC_API_URL}/projects`;
   const queryParams = {
     blockchain: query.blockchain,
     featured: query.featured,
