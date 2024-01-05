@@ -108,7 +108,7 @@ const MainPage = async () => {
 									/>
 								</div>
 								<div className="flex flex-col col-span-4 gap-1 my-1 ">
-									<span className="text-sm md:text-base text-gray-300 leading-4  line-clamp-2">
+									<span className="text-sm md:text-base text-gray-300 leading-4  lg:line-clamp-2">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
 										lore lore
 									</span>
@@ -146,12 +146,12 @@ const MainPage = async () => {
 										}
 									/>
 								</div>
-								<div className="flex flex-col col-span-4 gap-1 my-1">
-									<span className="text-sm md:text-base text-gray-300 leading-4  line-clamp-2">
+								<div className="flex flex-col col-span-4 gap-1 my-1 ">
+									<span className="text-sm md:text-base text-gray-300 leading-4  lg:line-clamp-2">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
 										lore lore
 									</span>
-									<span className="  text-white/50 text-sm leading-4 line-clamp-2">
+									<span className=" text-white/50 text-sm leading-4 line-clamp-2">
 										Lorem ipsum dolor sit ametnem alias asperiores quis, et aut
 										voluptatum delectus sed sapiente excepturi incidunt ad
 										nobis, iure quia consequatur.
@@ -185,12 +185,12 @@ const MainPage = async () => {
 										}
 									/>
 								</div>
-								<div className="flex flex-col col-span-4 gap-1 my-1">
-									<span className="text-sm md:text-base text-gray-300 leading-4  line-clamp-2">
+								<div className="flex flex-col col-span-4 gap-1 my-1 ">
+									<span className="text-sm md:text-base text-gray-300 leading-4  lg:line-clamp-2">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
 										lore lore
 									</span>
-									<span className="  text-white/50 text-sm leading-4 line-clamp-2">
+									<span className=" text-white/50 text-sm leading-4 line-clamp-2">
 										Lorem ipsum dolor sit ametnem alias asperiores quis, et aut
 										voluptatum delectus sed sapiente excepturi incidunt ad
 										nobis, iure quia consequatur.
@@ -224,12 +224,12 @@ const MainPage = async () => {
 										}
 									/>
 								</div>
-								<div className="flex flex-col col-span-4 gap-1 my-1">
-									<span className="text-sm md:text-base text-gray-300 leading-4  line-clamp-2">
+								<div className="flex flex-col col-span-4 gap-1 my-1 ">
+									<span className="text-sm md:text-base text-gray-300 leading-4  lg:line-clamp-2">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
 										lore lore
 									</span>
-									<span className="  text-white/50 text-sm leading-4 line-clamp-2">
+									<span className=" text-white/50 text-sm leading-4 line-clamp-2">
 										Lorem ipsum dolor sit ametnem alias asperiores quis, et aut
 										voluptatum delectus sed sapiente excepturi incidunt ad
 										nobis, iure quia consequatur.
@@ -252,7 +252,7 @@ const MainPage = async () => {
 										<p className=" text-white/50 text-xs">5 min ago</p>
 									</span>
 								</div>
-							</div>
+							</div>{" "}
 						</div>
 						<div className=" flex items-center justify-center border border-solid border-gray-800 hover:bg-violet-600 mx-2 py-2 rounded-lg">
 							view more
