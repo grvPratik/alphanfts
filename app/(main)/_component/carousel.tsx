@@ -80,6 +80,7 @@ const Carousel = () => {
 			carousel.current.offsetWidth * currentIndex <= maxScrollWidth.current
 		) {
 			setCurrentIndex((prevState) => prevState + 1);
+			console.log(carousel.current.offsetWidth);
 		}
 	};
 
@@ -89,6 +90,7 @@ const Carousel = () => {
 		}
 
 		if (direction === "next" && carousel.current !== null) {
+			console.log(carousel.current.offsetWidth);
 			return (
 				carousel.current.offsetWidth * currentIndex >= maxScrollWidth.current
 			);
@@ -99,11 +101,13 @@ const Carousel = () => {
 
 	useEffect(() => {
 		if (carousel !== null && carousel.current !== null) {
+		console.log(carousel.current);
 			carousel.current.scrollLeft = carousel.current.offsetWidth * currentIndex;
 		}
 	}, [currentIndex]);
 
 	useEffect(() => {
+		console.log(carousel.current);console.log(maxScrollWidth.current);
 		maxScrollWidth.current = carousel.current
 			? carousel.current.scrollWidth - carousel.current.offsetWidth
 			: 0;
@@ -161,7 +165,7 @@ const Carousel = () => {
 				</div>
 				<div
 					ref={carousel}
-					className="carousel-container relative flex gap-1 overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x z-0"
+					className="carousel-container relative flex gap-1 overflow-x-auto scroll-smooth snap-x snap-mandatory touch-pan-x z-0"
 				>
 					{data.resources.map((resource, index) => {
 						return (

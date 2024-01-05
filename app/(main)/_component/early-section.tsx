@@ -9,35 +9,25 @@ const EarlySection = () => {
 				<div>Early</div>
 				<div> left arrow right arrow</div>
 			</div>
-			{/* <div className="flex overflow-y-auto gap-4">
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				<div className="card flex flex-col p-8 gap-4 max-w-xs border border-solid border-gray-800 rounded-2xl overflow-hidden lg:max-w-md min-h-[4rem]  flex-shrink-0">
-					<div className="flex items-center">
-						<div className="relative h-12 w-12">
-							<Image fill src={""} alt="" />
+			<div className="flex overflow-y-auto gap-4 ">
+				<div className="card relative flex flex-col p-8 gap-4 max-w-xs border border-solid dark:border-gray-800 rounded-2xl overflow-hidden lg:max-w-md min-h-[4rem]  flex-shrink-0">
+					{/* <div className="bg-gradient-to-r -z-10 from-gray-800/30 to-transparent absolute inset-0 "></div> */}
+					<div className="flex items-center gap-2">
+						<div className="relative h-12 w-12 rounded-lg overflow-hidden">
+							<Image
+								fill
+								src={
+									"https://pbs.twimg.com/profile_images/1699992200392712192/vA21X1rr_400x400.jpg"
+								}
+								alt=""
+							/>
 						</div>
-						<div className=" line-clamp-1 leading-6"> the is title</div>
+						<div className=" line-clamp-1 leading-6 font-semibold text-lg dark:text-white/80">
+							{" "}
+							The is title
+						</div>
 					</div>
-					<div className=" line-clamp-3">
+					<div className=" line-clamp-3 dark:text-white/50">
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto
 						a hic repellat inventore aspernatur, cupiditate eaque debitis iusto
 						molestiae voluptatum reiciendis sunt itaque necessitatibus aperiam
@@ -45,11 +35,81 @@ const EarlySection = () => {
 					</div>
 					<div> the fuck is here</div>
 				</div>
-			
-			</div> */}
-
-			<div className="2xl:container 2xl:mx-auto 2xl:px-0 py-3 px-10">
-				<Carousel />
+				<div className="card relative flex flex-col p-8 gap-4 max-w-xs border border-solid dark:border-gray-800 rounded-2xl overflow-hidden lg:max-w-md min-h-[4rem]  flex-shrink-0">
+					{/* <div className="bg-gradient-to-r -z-10 from-gray-800/30 to-transparent absolute inset-0 "></div> */}
+					<div className="flex items-center gap-2">
+						<div className="relative h-12 w-12 rounded-lg overflow-hidden">
+							<Image
+								fill
+								src={
+									"https://pbs.twimg.com/profile_images/1699992200392712192/vA21X1rr_400x400.jpg"
+								}
+								alt=""
+							/>
+						</div>
+						<div className=" line-clamp-1 leading-6 font-semibold text-lg dark:text-white/80">
+							{" "}
+							The is title
+						</div>
+					</div>
+					<div className=" line-clamp-3 dark:text-white/50">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto
+						a hic repellat inventore aspernatur, cupiditate eaque debitis iusto
+						molestiae voluptatum reiciendis sunt itaque necessitatibus aperiam
+						in? Maiores amet ratione nulla?
+					</div>
+					<div> the fuck is here</div>
+				</div>
+				<div className="card relative flex flex-col p-8 gap-4 max-w-xs border border-solid dark:border-gray-800 rounded-2xl overflow-hidden lg:max-w-md min-h-[4rem]  flex-shrink-0">
+					{/* <div className="bg-gradient-to-r -z-10 from-gray-800/30 to-transparent absolute inset-0 "></div> */}
+					<div className="flex items-center gap-2">
+						<div className="relative h-12 w-12 rounded-lg overflow-hidden">
+							<Image
+								fill
+								src={
+									"https://pbs.twimg.com/profile_images/1699992200392712192/vA21X1rr_400x400.jpg"
+								}
+								alt=""
+							/>
+						</div>
+						<div className=" line-clamp-1 leading-6 font-semibold text-lg dark:text-white/80">
+							{" "}
+							The is title
+						</div>
+					</div>
+					<div className=" line-clamp-3 dark:text-white/50">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto
+						a hic repellat inventore aspernatur, cupiditate eaque debitis iusto
+						molestiae voluptatum reiciendis sunt itaque necessitatibus aperiam
+						in? Maiores amet ratione nulla?
+					</div>
+					<div> the fuck is here</div>
+				</div>
+				<div className="card relative flex flex-col p-8 gap-4 max-w-xs border border-solid dark:border-gray-800 rounded-2xl overflow-hidden lg:max-w-md min-h-[4rem]  flex-shrink-0">
+					{/* <div className="bg-gradient-to-r -z-10 from-gray-800/30 to-transparent absolute inset-0 "></div> */}
+					<div className="flex items-center gap-2">
+						<div className="relative h-12 w-12 rounded-lg overflow-hidden">
+							<Image
+								fill
+								src={
+									"https://pbs.twimg.com/profile_images/1699992200392712192/vA21X1rr_400x400.jpg"
+								}
+								alt=""
+							/>
+						</div>
+						<div className=" line-clamp-1 leading-6 font-semibold text-lg dark:text-white/80">
+							{" "}
+							The is title
+						</div>
+					</div>
+					<div className=" line-clamp-3 dark:text-white/50">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto
+						a hic repellat inventore aspernatur, cupiditate eaque debitis iusto
+						molestiae voluptatum reiciendis sunt itaque necessitatibus aperiam
+						in? Maiores amet ratione nulla?
+					</div>
+					<div> the fuck is here</div>
+				</div>
 			</div>
 		</div>
 	);
