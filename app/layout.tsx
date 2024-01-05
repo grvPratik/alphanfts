@@ -1,4 +1,4 @@
-import { Roboto_Mono,DM_Sans,Inter } from "next/font/google";
+import { Montserrat,Inter } from "next/font/google";
 import { Metadata } from "next";
 
 
@@ -13,7 +13,10 @@ import { siteConfig } from "@/config/site";
 
 
 const roboto = Inter({weight: ["400","500",'600','700','800','900', ], subsets:["latin"]});
-
+const montserrat = Montserrat({
+	weight: ["400", "500", "600", "700", "800", "900"],
+	subsets: ["latin"],
+});
 export const metadata: Metadata = {
 	title: {
 		default: siteConfig.name,

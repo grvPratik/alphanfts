@@ -5,6 +5,7 @@ import Image from "next/image";
 import React from "react";
 import TrendingSection from "../_component/trending-section";
 import Container from "@/components/container";
+import EarlySection from "../_component/early-section";
 
 const MainPage = async () => {
 	return (
@@ -62,7 +63,7 @@ const MainPage = async () => {
 							/>
 						</div>
 					</div>
-					<div className="lg:col-span-2 col-span-4 flex flex-col w-full gap-2">
+					<div className="lg:col-span-2  col-span-4 flex flex-col w-full gap-2">
 						<div className="p-2 flex items-center  lg:textLg text-gray-100 font-medium leading-6 ">
 							<div className="h-full flex items-center border-b-2 border-transparent pr-2 border-purple-500 p-1">
 								{" "}
@@ -98,7 +99,7 @@ const MainPage = async () => {
 						</div>
 						<div className="flex-col flex gap-1 w-full">
 							<div className="post grid grid-cols-6 overflow-hidden h-24 lg:h-28  gap-2 m-1">
-								<div className="relative col-span-2 m-1 rounded-md overflow-hidden">
+								<div className="relative col-span-2  m-1 rounded-md overflow-hidden">
 									<Image
 										fill
 										alt=""
@@ -108,11 +109,11 @@ const MainPage = async () => {
 									/>
 								</div>
 								<div className="flex flex-col col-span-4 gap-1 my-1 ">
-									<span className="text-sm md:text-base text-gray-300 leading-4  lg:line-clamp-2">
+									<span className="text-sm md:text-base text-gray-300 lg: line-clamp-2 leading-4  ">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
 										lore lore
 									</span>
-									<span className=" text-white/50 text-sm leading-4 line-clamp-2">
+									<span className=" text-white/50 text-sm leading-4 line-clamp-1  ">
 										Lorem ipsum dolor sit ametnem alias asperiores quis, et aut
 										voluptatum delectus sed sapiente excepturi incidunt ad
 										nobis, iure quia consequatur.
@@ -135,9 +136,9 @@ const MainPage = async () => {
 										<p className=" text-white/50 text-xs">5 min ago</p>
 									</span>
 								</div>
-							</div>{" "}
+							</div>
 							<div className="post grid grid-cols-6 overflow-hidden h-24 lg:h-28  gap-2 m-1">
-								<div className="relative col-span-2 m-1 rounded-md overflow-hidden">
+								<div className="relative col-span-2  m-1 rounded-md overflow-hidden">
 									<Image
 										fill
 										alt=""
@@ -147,11 +148,11 @@ const MainPage = async () => {
 									/>
 								</div>
 								<div className="flex flex-col col-span-4 gap-1 my-1 ">
-									<span className="text-sm md:text-base text-gray-300 leading-4  lg:line-clamp-2">
+									<span className="text-sm md:text-base text-gray-300 lg: line-clamp-2 leading-4  ">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
 										lore lore
 									</span>
-									<span className=" text-white/50 text-sm leading-4 line-clamp-2">
+									<span className=" text-white/50 text-sm leading-4 line-clamp-1  ">
 										Lorem ipsum dolor sit ametnem alias asperiores quis, et aut
 										voluptatum delectus sed sapiente excepturi incidunt ad
 										nobis, iure quia consequatur.
@@ -174,9 +175,9 @@ const MainPage = async () => {
 										<p className=" text-white/50 text-xs">5 min ago</p>
 									</span>
 								</div>
-							</div>{" "}
+							</div>
 							<div className="post grid grid-cols-6 overflow-hidden h-24 lg:h-28  gap-2 m-1">
-								<div className="relative col-span-2 m-1 rounded-md overflow-hidden">
+								<div className="relative col-span-2  m-1 rounded-md overflow-hidden ">
 									<Image
 										fill
 										alt=""
@@ -186,11 +187,11 @@ const MainPage = async () => {
 									/>
 								</div>
 								<div className="flex flex-col col-span-4 gap-1 my-1 ">
-									<span className="text-sm md:text-base text-gray-300 leading-4  lg:line-clamp-2">
+									<span className="text-sm md:text-base text-gray-300 lg: line-clamp-2 leading-4  ">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
 										lore lore
 									</span>
-									<span className=" text-white/50 text-sm leading-4 line-clamp-2">
+									<span className=" text-white/50 text-sm leading-4 line-clamp-1  ">
 										Lorem ipsum dolor sit ametnem alias asperiores quis, et aut
 										voluptatum delectus sed sapiente excepturi incidunt ad
 										nobis, iure quia consequatur.
@@ -213,9 +214,9 @@ const MainPage = async () => {
 										<p className=" text-white/50 text-xs">5 min ago</p>
 									</span>
 								</div>
-							</div>{" "}
+							</div>
 							<div className="post grid grid-cols-6 overflow-hidden h-24 lg:h-28  gap-2 m-1">
-								<div className="relative col-span-2 m-1 rounded-md overflow-hidden">
+								<div className="relative col-span-2  m-1 rounded-md overflow-hidden">
 									<Image
 										fill
 										alt=""
@@ -225,11 +226,11 @@ const MainPage = async () => {
 									/>
 								</div>
 								<div className="flex flex-col col-span-4 gap-1 my-1 ">
-									<span className="text-sm md:text-base text-gray-300 leading-4  lg:line-clamp-2">
+									<span className="text-sm md:text-base text-gray-300 lg: line-clamp-2 leading-4  ">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
 										lore lore
 									</span>
-									<span className=" text-white/50 text-sm leading-4 line-clamp-2">
+									<span className=" text-white/50 text-sm leading-4 line-clamp-1  ">
 										Lorem ipsum dolor sit ametnem alias asperiores quis, et aut
 										voluptatum delectus sed sapiente excepturi incidunt ad
 										nobis, iure quia consequatur.
@@ -305,6 +306,11 @@ const MainPage = async () => {
 						</div>
 					</div>
 					<TrendingSection />
+				</div>
+
+				<div className="new my-4 ">
+					<EarlySection />{" "}
+					
 				</div>
 			</main>
 		</Container>

@@ -12,7 +12,7 @@ const TrendingSection = async () => {
     	const getTrending = await getCollection({
 				sort: "rating",
 				order: "desc",
-				items: 12,
+				items: 13,
 			});
 
 			const getEarly = await getCollection({
@@ -22,7 +22,7 @@ const TrendingSection = async () => {
             });
     const trendingData= getTrending?.result
   return (
-		<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row gap-3">
+		<div className="grid my-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row gap-3">
 			{/* Render MintTabCard components based on earlyData */}
 			{trendingData.length > 0 ? (
 				trendingData.map((data: CollectionProps, index: number) => (
