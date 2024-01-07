@@ -27,16 +27,17 @@ const SearchInput = ({ setSearch, onClick, modalState }: SearchInputProps) => {
 	return (
 		<div
 			onClick={onClick}
-			className="relative  dark:bg-gray-900 max-w-[27rem] w-full mx-auto z-40 flex flex-row-reverse items-center border-solid border transition-[border-color] overflow-hidden  border-border   hover:border-gray-300  rounded-full font-light text-sm  "
+			className="relative  dark:bg-gray-900 max-w-[27rem] w-full mx-auto z-40 flex flex-row-reverse items-center border-solid border transition-[border-color] overflow-hidden    hover:border-gray-300  rounded-full font-light text-sm  "
 		>
 			<input
 				name="search"
 				placeholder="Search..."
 				value={searchInput}
+				type="text"
 				onChange={handleChange}
 				className={cn(
-					"h-9 md:h-10  focus:outline-none  transition-all duration-200 ease-in-out translate-x-0  w-full antialiased dark:bg-gray-900",
-					modalState ? "-translate-x-6" : ""
+					"h-9 md:h-10 focus:outline-none  transition-all duration-200 ease-in-out w-full antialiased dark:bg-gray-900",
+					modalState ? "-translate-x-6 focus:outline-none" : ""
 				)}
 			/>
 			<div
@@ -46,7 +47,7 @@ const SearchInput = ({ setSearch, onClick, modalState }: SearchInputProps) => {
 			>
 				<svg
 					className={cn(
-						"h-4 w-4  bg-transparent",
+						"h-4 w-4  bg-transparent opacity-75",
 						modalState ? "opacity-0" : ""
 					)}
 					fill="currentColor"

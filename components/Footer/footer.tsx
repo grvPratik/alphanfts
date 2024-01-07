@@ -33,7 +33,7 @@ const Footer = () => {
 					<div className="space-y-2 text-sm">
 						<ToggleTheme />
 
-						{/*	<p className="text-base font-bold tracking-wide text-gray-900">
+							<p className="text-base font-bold tracking-wide text-gray-900">
 							Contacts
 						</p>
 						<div className="flex">
@@ -70,7 +70,7 @@ const Footer = () => {
 							>
 								312 Lovely Street, NY
 							</a>
-						</div>*/}
+						</div>
 					</div>
 					<div>
 						<span className="text-base font-bold tracking-wide text-gray-900">

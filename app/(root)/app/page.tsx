@@ -104,7 +104,7 @@ const MainPage = async () => {
 							</div>
 							<div className="flex-col flex gap-1 w-full">
 								<div className="post flex overflow-hidden  gap-2 m-1">
-									<div className="relative  h-14 w-14 rounded-md overflow-hidden flex-shrink-0 mx-auto mt-2">
+									<div className="relative  h-14 w-14 rounded-md overflow-hidden flex-shrink-0 mx-2 mt-2">
 										<Image
 											fill
 											className=" object-cover"
@@ -115,7 +115,7 @@ const MainPage = async () => {
 										/>
 									</div>
 									<div className="flex flex-col  gap-1 my-1 ">
-										<span className="text-sm md:text-base dark:text-gray-300 lg: line-clamp-2 leading-4  ">
+										<span className="text-sm md:text-base dark:text-gray-300 lg: line-clamp-2 lg:line-clamp-1 leading-4  ">
 											Lorem ipsum dolor sit amet consectetur adipisicing elit.
 											Quo lore lore
 										</span>

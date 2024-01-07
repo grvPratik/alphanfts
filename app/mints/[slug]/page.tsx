@@ -72,6 +72,7 @@ const MintDetailsPage = async ({
 		blockchain,
 		mintDate,
 		createdAt,
+		currFollower,
 		requirement,
 		info,
 		roadmap,
@@ -93,11 +94,11 @@ const MintDetailsPage = async ({
 				<OptImage
 					src={bannerUrl}
 					alt={name}
-					className="relative w-full aspect-[9/2] rounded-xl overflow-hidden"
+					className="relative w-full aspect-[9/2] max-h-40 rounded-xl overflow-hidden"
 				/>
-				
-				<div className="my-2 md:mt-4 flex md:mx-6 gap-4 ">
-					<div className="relative flex-shrink-0   md:w-24 md:h-24 w-16 h-16 aspect-square rounded-2xl overflow-hidden">
+
+				<div className="my-2 md:mt-4 flex md:mx-6 gap-4 items-center">
+					<div className="relative flex-shrink-0  md:w-20 md:h-20 w-14 h-14 aspect-square rounded-2xl overflow-hidden">
 						<Image
 							src={imageUrl}
 							alt={name}
@@ -106,19 +107,29 @@ const MintDetailsPage = async ({
 							className=" object-cover"
 						/>
 					</div>
-					<div className="mt-2 md:mt-4 ">
-						<div className=" md:text-3xl text-xl md:font-bold font-semibold leading-none">
+					<div className="flex flex-col items-sart gap-1 md:gap-2">
+						<div className=" md:text-xl text-lg md:font-bold font-semibold line-clamp-1 md:leading-none leading-none">
 							{name}
 						</div>
-						<div className=" text-xs">@{slugId}</div>
+						<div className=" text-sm leading-none">@{slugId}</div>
+						<div>
+							<span className="text-sm leading-none line-clamp-1">
+								{currFollower} followers
+							</span>
+						</div>
 					</div>
 				</div>
 				<div className="my-2 flex md:mx-6   flex-col">
-					<p className="opacity-75 text-sm ">{discription}</p>
+					
 				</div>
-				<div className=" flex flex-col md:flex-row">
+				<div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
 					<div className=" md:mx-8">
-						<div>
+						<div><p className="opacity-75 text-sm ">
+						{discription}Discription:- Lorem ipsum dolor sit amet consectetur, adipisicing
+						elit. Pariatur voluptatum accusantium, temporibus aperiam atque
+						optio labore laborum voluptate magnam quod ut, aspernatur blanditiis
+						veritatis velit repellendus quas officia commodi nulla?
+					</p>
 							<div className="grid grid-cols-2 grid-rows-2  min-w-[18rem] bg-gray-200/70 dark:bg-gray-200/20 rounded-xl w-full ">
 								<div className=" flex-col flex   text-center  p-3 ">
 									<div className=" font-semibold">Mint Date:</div>
@@ -153,9 +164,12 @@ const MintDetailsPage = async ({
 							</div>
 						</div>
 					</div>
-					<div className="w-full">
+					<div className="">
 						<MintInfoSection infoData={additionalInfo} />
-					</div>
+						
+					</div><div>
+							<h1>similar projects</h1>
+						</div>
 				</div>
 			</div>
 		</Container>
